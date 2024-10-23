@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Travel Booking Website</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.css"
+		/>
+	</head>
+	<body class="bg-gray-50">
+		<!-- Navigation -->
+		<nav class="bg-white shadow-sm">
+			<div class="container mx-auto px-4 py-3">
+				<div class="flex justify-between items-center">
+					<div class="text-2xl font-bold text-yellow-500">
+						TravelX
+					</div>
+					<div class="hidden md:flex space-x-6">
+						<a href="#" class="text-gray-600 hover:text-gray-900"
+							>Home</a
+						>
+						<a href="#" class="text-gray-600 hover:text-gray-900"
+							>Tours</a
+						>
+						<a href="#" class="text-gray-600 hover:text-gray-900"
+							>Hotels</a
+						>
+						<a href="#" class="text-gray-600 hover:text-gray-900"
+							>Cars</a
+						>
+						<a href="#" class="text-gray-600 hover:text-gray-900"
+							>Contact</a
+						>
+					</div>
+					<div class="flex items-center space-x-4">
+						<button
+							class="bg-yellow-500 text-white px-4 py-2 rounded-lg"
+						>
+							Sign In
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<div class="relative h-[500px] bg-blue-100">
+			<img
+				src="/api/placeholder/1200/500"
+				alt="Hero"
+				class="w-full h-full object-cover"
+			/>
+			<div class="absolute inset-0 bg-black bg-opacity-40"></div>
+			<div class="absolute inset-0 flex items-center justify-center">
+				<div class="text-center text-white">
+					<h1 class="text-4xl md:text-6xl font-bold mb-4">
+						Unleash Your Wanderlust
+					</h1>
+					<p class="text-xl mb-8">Book Your Next Journey</p>
+					<div class="bg-white rounded-lg p-4 max-w-4xl mx-auto">
+						<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+							<input
+								type="text"
+								placeholder="Where to?"
+								class="p-2 border rounded"
+							/>
+							<input type="date" class="p-2 border rounded" />
+							<input
+								type="number"
+								placeholder="Guests"
+								class="p-2 border rounded"
+							/>
+							<button
+								class="bg-yellow-500 text-white p-2 rounded"
+							>
+								Search
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Featured Tours -->
+		<div class="container mx-auto px-4 py-12">
+			<div class="flex justify-between items-center mb-6">
+				<h2 class="text-2xl font-bold">Our Featured Tours</h2>
+				<button class="text-yellow-500">View All</button>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+				<!-- Tour Card 1 -->
+				<div
+					class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+				>
+					<img
+						src="/api/placeholder/300/200"
+						alt="Tour"
+						class="w-full h-48 object-cover"
+					/>
+					<div class="p-4">
+						<h3 class="font-semibold mb-2 tour-name">
+							California Desert Tour
+						</h3>
+						<p class="text-gray-600 text-sm mb-2">
+							3 Days 2 Nights
+						</p>
+						<div class="flex justify-between items-center">
+							<span class="text-yellow-500 font-bold tour-price"
+								>$99.99</span
+							>
+							<button
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
+							>
+								Book Now
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tour Card 2 -->
+				<div
+					class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+				>
+					<img
+						src="/api/placeholder/300/200"
+						alt="Tour"
+						class="w-full h-48 object-cover"
+					/>
+					<div class="p-4">
+						<h3 class="font-semibold mb-2 tour-name">
+							Grand Canyon Adventure
+						</h3>
+						<p class="text-gray-600 text-sm mb-2">
+							4 Days 3 Nights
+						</p>
+						<div class="flex justify-between items-center">
+							<span class="text-yellow-500 font-bold tour-price"
+								>$149.99</span
+							>
+							<button
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
+							>
+								Book Now
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tour Card 3 -->
+				<div
+					class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+				>
+					<img
+						src="/api/placeholder/300/200"
+						alt="Tour"
+						class="w-full h-48 object-cover"
+					/>
+					<div class="p-4">
+						<h3 class="font-semibold mb-2 tour-name">
+							Yellowstone Explorer
+						</h3>
+						<p class="text-gray-600 text-sm mb-2">
+							5 Days 4 Nights
+						</p>
+						<div class="flex justify-between items-center">
+							<span class="text-yellow-500 font-bold tour-price"
+								>$199.99</span
+							>
+							<button
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
+							>
+								Book Now
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tour Card 4 -->
+				<div
+					class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+				>
+					<img
+						src="/api/placeholder/300/200"
+						alt="Tour"
+						class="w-full h-48 object-cover"
+					/>
+					<div class="p-4">
+						<h3 class="font-semibold mb-2 tour-name">
+							Hawaii Beach Vacation
+						</h3>
+						<p class="text-gray-600 text-sm mb-2">
+							7 Days 6 Nights
+						</p>
+						<div class="flex justify-between items-center">
+							<span class="text-yellow-500 font-bold tour-price"
+								>$299.99</span
+							>
+							<button
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
+							>
+								Book Now
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Categories -->
+		<div class="container mx-auto px-4 py-12">
+			<h2 class="text-2xl font-bold mb-6">Top Categories of Tours</h2>
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+				<div class="relative rounded-lg overflow-hidden h-32">
+					<img
+						src="/api/placeholder/300/200"
+						alt="Beach"
+						class="w-full h-full object-cover"
+					/>
+					<div
+						class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"
+					>
+						<span class="text-white font-semibold text-lg"
+							>Beach</span
+						>
+					</div>
+				</div>
+				<div class="relative rounded-lg overflow-hidden h-32">
+					<img
+						src="/api/placeholder/300/200"
+						alt="Mountain"
+						class="w-full h-full object-cover"
+					/>
+					<div
+						class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"
+					>
+						<span class="text-white font-semibold text-lg"
+							>Mountain</span
+						>
+					</div>
+				</div>
+				<div class="relative rounded-lg overflow-hidden h-32">
+					<img
+						src="/api/placeholder/300/200"
+						alt="City"
+						class="w-full h-full object-cover"
+					/>
+					<div
+						class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"
+					>
+						<span class="text-white font-semibold text-lg"
+							>City</span
+						>
+					</div>
+				</div>
+				<div class="relative rounded-lg overflow-hidden h-32">
+					<img
+						src="/api/placeholder/300/200"
+						alt="Desert"
+						class="w-full h-full object-cover"
+					/>
+					<div
+						class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"
+					>
+						<span class="text-white font-semibold text-lg"
+							>Desert</span
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Booking Modal -->
+		<div
+			id="ticketModal"
+			class="fixed inset-0 bg-black bg-opacity-50 hidden z-50"
+		>
+			<div class="bg-white rounded-lg max-w-2xl mx-auto mt-20 p-6">
+				<div class="flex justify-between items-center mb-4">
+					<h2 class="text-2xl font-bold">Book Your Tour</h2>
+					<button
+						id="closeModal"
+						class="text-gray-500 hover:text-gray-700"
+					>
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M6 18L18 6M6 6l12 12"
+							></path>
+						</svg>
+					</button>
+				</div>
+				<form id="ticketForm" class="space-y-4">
+					<div class="grid grid-cols-2 gap-4">
+						<div>
+							<label
+								class="block text-sm font-medium text-gray-700"
+								>Tour</label
+							>
+							<input
+								type="text"
+								id="tourDestination"
+								class="mt-1 block w-full border rounded-md p-2"
+								readonly
+							/>
+						</div>
+						<div>
+							<label
+								class="block text-sm font-medium text-gray-700"
+								>Price per Person</label
+							>
+							<input
+								type="text"
+								id="tourPrice"
+								class="mt-1 block w-full border rounded-md p-2"
+								readonly
+							/>
+						</div>
+					</div>
+					<div class="grid grid-cols-2 gap-4">
+						<div>
+							<label
+								class="block text-sm font-medium text-gray-700"
+								>Number of Travelers</label
+							>
+							<input
+								type="number"
+								id="ticketQuantity"
+								min="1"
+								value="1"
+								class="mt-1 block w-full border rounded-md p-2"
+							/>
+						</div>
+						<div>
+							<label
+								class="block text-sm font-medium text-gray-700"
+								>Tour Date</label
+							>
+							<input
+								type="date"
+								id="tourDate"
+								class="mt-1 block w-full border rounded-md p-2"
+								required
+							/>
+						</div>
+					</div>
+					<div class="grid grid-cols-2 gap-4">
+						<div>
+							<label
+								class="block text-sm font-medium text-gray-700"
+								>Full Name</label
+							>
+							<input
+								type="text"
+								id="fullName"
+								placeholder="John Doe"
+								class="mt-1 block w-full border rounded-md p-2"
+								required
+							/>
+						</div>
+						<div>
+							<label
+								class="block text-sm font-medium text-gray-700"
+								>Email</label
+							>
+							<input
+								type="email"
+								id="contactEmail"
+								placeholder="john@example.com"
+								class="mt-1 block w-full border rounded-md p-2"
+								required
+							/>
+						</div>
+					</div>
+					<div>
+						<label class="block text-sm font-medium text-gray-700"
+							>Special Requests</label
+						>
+						<textarea
+							id="specialRequests"
+							rows="3"
+							class="mt-1 block w-full border rounded-md p-2"
+						></textarea>
+					</div>
+					<div class="border-t pt-4">
+						<div class="flex justify-between items-center mb-4">
+							<span class="font-medium">Total Amount:</span>
+							<span
+								id="totalAmount"
+								class="text-xl font-bold text-yellow-500"
+								>$0.00</span
+							>
+						</div>
+						<button
+							type="submit"
+							class="w-full bg-yellow-500 text-white py-2 px-4 rounded-md hover:bg-yellow-600"
+						>
+							Confirm Booking
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="bg-gray-900 text-white mt-12">
+			<div class="container mx-auto px-4 py-12">
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+					<div>
+						<h3 class="text-xl font-bold mb-4">TravelX</h3>
+						<p class="text-gray-400">Your trusted travel partner</p>
+					</div>
+					<div>
+						<h4 class="font-semibold mb-4">Quick Links</h4>
+						<ul class="space-y-2">
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white"
+									>About Us</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white"
+									>Contact</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white"
+									>Terms & Conditions</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-semibold mb-4">Contact Us</h4>
+						<ul class="space-y-2">
+							<li class="text-gray-400">1234 Travel Lane</li>
+							<li class="text-gray-400">
+								Adventure City, AC 12345
+							</li>
+							<li class="text-gray-400">1-888-TRAVEL-X</li>
+							<li class="text-gray-400">info@travelx.com</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-semibold mb-4">Follow Us</h4>
+						<div class="flex space-x-4">
+							<a href="#" class="text-gray-400 hover:text-white"
+								>Facebook</a
+							>
+							<a href="#" class="text-gray-400 hover:text-white"
+								>Twitter</a
+							>
+							<a href="#" class="text-gray-400 hover:text-white"
+								>Instagram</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			$(document).ready(function () {
+				new Swiper(".featured-tours", {
+					slidesPerView: 1,
+					spaceBetween: 20,
+					navigation: {
+						nextEl: ".swiper-button-next",
+						prevEl: ".swiper-button-prev",
+					},
+					breakpoints: {
+						640: {
+							slidesPerView: 2,
+						},
+						768: {
+							slidesPerView: 3,
+						},
+						1024: {
+							slidesPerView: 4,
+						},
+					},
+				});
+				$('a[href^="#"]').on("click", function (e) {
+					e.preventDefault();
+					$("html, body").animate(
+						{
+							scrollTop: $($(this).attr("href")).offset().top,
+						},
+						500
+					);
+				});
+
+				$(".mobile-menu-button").on("click", function () {
+					$(".mobile-menu").toggleClass("hidden");
+				});
+			});
+			$(".book-now-btn").on("click", function (e) {
+				e.preventDefault();
+				const tourCard = $(this).closest(".tour-card");
+				const tourName = tourCard.find(".tour-name").text();
+				const tourPrice = tourCard.find(".tour-price").text();
+
+				openBookingModal(tourName, tourPrice);
+			});
+
+			$("#closeModal").on("click", function () {
+				$("#ticketModal").fadeOut();
+			});
+
+			$(window).on("click", function (e) {
+				if ($(e.target).is("#ticketModal")) {
+					$("#ticketModal").fadeOut();
+				}
+			});
+
+			$("#ticketQuantity").on("input", function () {
+				updateTotalAmount();
+			});
+
+			$("#ticketForm").on("submit", function (e) {
+				e.preventDefault();
+
+				// Basic validation
+				const email = $("#contactEmail").val();
+				const date = $("#tourDate").val();
+
+				if (!email || !date) {
+					alert("Please fill in all required fields");
+					return;
+				}
+
+				const bookingData = {
+					tour: $("#tourDestination").val(),
+					price: $("#tourPrice").val(),
+					quantity: $("#ticketQuantity").val(),
+					date: date,
+					email: email,
+					totalAmount: $("#totalAmount").text(),
+				};
+
+				alert(
+					"Booking successful!\n\nBooking Details:\n" +
+						`Tour: ${bookingData.tour}\n` +
+						`Date: ${bookingData.date}\n` +
+						`Quantity: ${bookingData.quantity}\n` +
+						`Total: ${bookingData.totalAmount}`
+				);
+
+				$("#ticketModal").fadeOut();
+				$("#ticketForm")[0].reset();
+			});
+
+			function openBookingModal(tourName, tourPrice) {
+				$("#tourDestination").val(tourName);
+				$("#tourPrice").val(tourPrice);
+				$("#ticketQuantity").val(1);
+				updateTotalAmount();
+				$("#ticketModal").fadeIn();
+			}
+
+			function updateTotalAmount() {
+				const price = parseFloat(
+					$("#tourPrice").val().replace("$", "")
+				);
+				const quantity = parseInt($("#ticketQuantity").val());
+				const total = price * quantity;
+				$("#totalAmount").text(`$${total.toFixed(2)}`);
+			}
+		</script>
+	</body>
+</html>
