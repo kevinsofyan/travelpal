@@ -3,52 +3,66 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>About Us - TravelX</title>
+		<title>Travelpal - About Us</title>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
 	<body class="bg-gray-50">
-		<!-- Navigation -->
-		<nav class="bg-white shadow-sm">
+		<nav
+			class="bg-white shadow-sm fixed w-full z-50 transition-all duration-300"
+		>
 			<div class="container mx-auto px-4 py-3">
 				<div class="flex justify-between items-center">
-					<div class="text-2xl font-bold text-yellow-500">
-						TravelX
-					</div>
+					<a
+						href="index.html"
+						class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
+					>
+						<div
+							class="text-2xl font-bold text-yellow-500 hover:scale-105 transition-transform duration-300"
+						>
+							Travelpal
+						</div>
+					</a>
 					<div class="hidden md:flex space-x-6">
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="index.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Home</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="tours.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Tours</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
-							>Hotels</a
-						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
-							>Cars</a
+						<a
+							href="aboutus.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
+							>About Us</a
 						>
 						<a
-							href="#"
-							class="text-gray-600 hover:text-gray-900 font-semibold"
-							>About</a
+							href="contactus.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
+							>Contact</a
 						>
 					</div>
 					<div class="flex items-center space-x-4">
-						<button
-							class="bg-yellow-500 text-white px-4 py-2 rounded-lg"
+						<a
+							href="register.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 						>
-							Sign In
-						</button>
+							<button
+								class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 hover:scale-105 transition-all duration-300"
+							>
+								Sign Up
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>
 		</nav>
-
-		<!-- Hero Section -->
 		<div class="relative h-[400px]">
 			<img
-				src="/api/placeholder/1200/400"
+				src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1200"
 				alt="About Us"
 				class="w-full h-full object-cover"
 			/>
@@ -59,7 +73,7 @@
 				<div class="container mx-auto px-4">
 					<span
 						class="text-yellow-500 font-semibold text-sm uppercase tracking-wider"
-						>Welcome to TravelX</span
+						>Welcome to Travelpal</span
 					>
 					<h1
 						class="text-4xl md:text-5xl font-bold text-white mt-2 mb-4"
@@ -67,7 +81,8 @@
 						Your Journey Begins Here
 					</h1>
 					<p class="text-xl text-gray-200 max-w-2xl mx-auto">
-						Creating extraordinary travel experiences since 2010
+						Creating extraordinary travel experiences since last
+						wednesday
 					</p>
 				</div>
 			</div>
@@ -78,12 +93,18 @@
 			<!-- Our Story Section -->
 			<div class="max-w-4xl mx-auto text-center mb-16">
 				<h2 class="text-3xl font-bold mb-6">Our Story</h2>
-				<p class="text-gray-600 leading-relaxed mb-12">
-					Founded in 2010, TravelX emerged from a passion for
-					exploration and a vision to transform the way people
-					experience travel. What started as a small team of
-					enthusiasts has evolved into a leading travel company,
-					serving thousands of adventurers worldwide.
+				<p class="text-gray-600 leading-relaxed mb-12 text-xl">
+					Founded in 2024, Travelpal emerged from a milestone project
+					from Hacktiv8.<br />this site was built for about 3 days and
+					consume about 4 cups of kopi kenangan (not a sponsor)
+					<br /><br />
+
+					almost all feature here was just a placeholder, so if you
+					actually planning to use this service as your travel guide
+					then you probably being scammed by someone and probably a
+					bit stupid
+
+					<br /><br />and now its time to showcase the website,
 				</p>
 
 				<!-- Statistics -->
@@ -189,8 +210,6 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Contact Section -->
 			<div class="max-w-4xl mx-auto">
 				<div class="bg-white rounded-lg shadow-sm p-8 text-center">
 					<h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
@@ -214,7 +233,7 @@
 								</svg>
 							</div>
 							<h3 class="font-semibold mb-2">Phone</h3>
-							<p class="text-gray-600">1-888-TRAVEL-X</p>
+							<p class="text-gray-600">+6281977516727</p>
 						</div>
 						<div>
 							<div
@@ -235,7 +254,7 @@
 								</svg>
 							</div>
 							<h3 class="font-semibold mb-2">Email</h3>
-							<p class="text-gray-600">info@travelx.com</p>
+							<p class="text-gray-600">cs@travelpal.com</p>
 						</div>
 						<div>
 							<div
@@ -271,12 +290,17 @@
 			</div>
 		</div>
 
-		<!-- Footer -->
 		<footer class="bg-gray-900 text-white mt-12">
 			<div class="container mx-auto px-4 py-12">
 				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 					<div>
-						<h3 class="text-xl font-bold mb-4">TravelX</h3>
+						<a
+							href="index.html"
+							class="text-gray-400 hover:text-white"
+						>
+							<h3 class="text-xl font-bold mb-4">Travelpal</h3>
+						</a>
+
 						<p class="text-gray-400">Your trusted travel partner</p>
 					</div>
 					<div>
@@ -284,23 +308,23 @@
 						<ul class="space-y-2">
 							<li>
 								<a
-									href="#"
+									href="aboutus.html"
 									class="text-gray-400 hover:text-white"
 									>About Us</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="tours.html"
 									class="text-gray-400 hover:text-white"
-									>Contact</a
+									>Tours</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="contactus.html"
 									class="text-gray-400 hover:text-white"
-									>Terms & Conditions</a
+									>Contact</a
 								>
 							</li>
 						</ul>
@@ -308,12 +332,14 @@
 					<div>
 						<h4 class="font-semibold mb-4">Contact Us</h4>
 						<ul class="space-y-2">
-							<li class="text-gray-400">1234 Travel Lane</li>
 							<li class="text-gray-400">
-								Adventure City, AC 12345
+								Golden Park 3 blok H no 52
 							</li>
-							<li class="text-gray-400">1-888-TRAVEL-X</li>
-							<li class="text-gray-400">info@travelx.com</li>
+							<li class="text-gray-400">
+								Padang, Sumatera Barat
+							</li>
+							<li class="text-gray-400">+6281977516727</li>
+							<li class="text-gray-400">cs@travelpal.com</li>
 						</ul>
 					</div>
 					<div>

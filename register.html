@@ -3,65 +3,77 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Register - TravelX</title>
+		<title>Travelpal - Register</title>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
 	<body class="bg-gray-50">
-		<!-- Navigation -->
-		<nav class="bg-white shadow-sm">
+		<nav
+			class="bg-white shadow-sm fixed w-full z-50 transition-all duration-300"
+		>
 			<div class="container mx-auto px-4 py-3">
 				<div class="flex justify-between items-center">
-					<div class="text-2xl font-bold text-yellow-500">
-						TravelX
-					</div>
+					<a
+						href="index.html"
+						class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
+					>
+						<div
+							class="text-2xl font-bold text-yellow-500 hover:scale-105 transition-transform duration-300"
+						>
+							Travelpal
+						</div>
+					</a>
 					<div class="hidden md:flex space-x-6">
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="index.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Home</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="tours.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Tours</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
-							>Hotels</a
+						<a
+							href="aboutus.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
+							>About Us</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
-							>Cars</a
-						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="contactus.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Contact</a
 						>
 					</div>
 					<div class="flex items-center space-x-4">
-						<button class="text-gray-600 hover:text-gray-900">
-							Sign In
-						</button>
-						<button
-							class="bg-yellow-500 text-white px-4 py-2 rounded-lg"
+						<a
+							href="register.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 						>
-							Register
-						</button>
+							<button
+								class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 hover:scale-105 transition-all duration-300"
+							>
+								Sign Up
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>
 		</nav>
-
-		<!-- Registration Section -->
 		<div class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-			<div class="container mx-auto max-w-4xl">
-				<!-- Header -->
+			<div class="container mx-auto max-w-4xl pt-10">
 				<div class="text-center mb-8">
 					<h1 class="text-3xl font-bold text-gray-900 mb-2">
 						Create Your Account
 					</h1>
 					<p class="text-gray-600">
-						Join TravelX and start planning your next adventure
+						Join Travelpal and start planning your next adventure
 					</p>
 				</div>
 
 				<!-- Registration Form Card -->
 				<div class="bg-white rounded-lg shadow-sm p-8">
-					<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<div class="grid grid-cols-1 md:grid-cols-1 gap-8">
 						<!-- Form Section -->
 						<div class="space-y-6">
 							<h2
@@ -176,150 +188,22 @@
 								</button>
 							</form>
 						</div>
-
-						<!-- Benefits Section -->
-						<div class="space-y-6">
-							<h2
-								class="text-xl font-semibold text-gray-900 mb-6"
-							>
-								Member Benefits
-							</h2>
-							<div class="space-y-4">
-								<div class="flex items-start">
-									<div class="flex-shrink-0">
-										<svg
-											class="w-6 h-6 text-yellow-500"
-											fill="none"
-											stroke="currentColor"
-											viewBox="0 0 24 24"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
-												d="M5 13l4 4L19 7"
-											></path>
-										</svg>
-									</div>
-									<div class="ml-3">
-										<h3 class="font-medium text-gray-900">
-											Exclusive Deals
-										</h3>
-										<p class="text-gray-600">
-											Access special rates and early bird
-											discounts on tours and hotels
-										</p>
-									</div>
-								</div>
-
-								<div class="flex items-start">
-									<div class="flex-shrink-0">
-										<svg
-											class="w-6 h-6 text-yellow-500"
-											fill="none"
-											stroke="currentColor"
-											viewBox="0 0 24 24"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
-												d="M5 13l4 4L19 7"
-											></path>
-										</svg>
-									</div>
-									<div class="ml-3">
-										<h3 class="font-medium text-gray-900">
-											Travel Points
-										</h3>
-										<p class="text-gray-600">
-											Earn points on every booking and
-											redeem them for free travel
-										</p>
-									</div>
-								</div>
-
-								<div class="flex items-start">
-									<div class="flex-shrink-0">
-										<svg
-											class="w-6 h-6 text-yellow-500"
-											fill="none"
-											stroke="currentColor"
-											viewBox="0 0 24 24"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
-												d="M5 13l4 4L19 7"
-											></path>
-										</svg>
-									</div>
-									<div class="ml-3">
-										<h3 class="font-medium text-gray-900">
-											Priority Support
-										</h3>
-										<p class="text-gray-600">
-											Get dedicated customer support for
-											all your travel needs
-										</p>
-									</div>
-								</div>
-
-								<div class="flex items-start">
-									<div class="flex-shrink-0">
-										<svg
-											class="w-6 h-6 text-yellow-500"
-											fill="none"
-											stroke="currentColor"
-											viewBox="0 0 24 24"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
-												d="M5 13l4 4L19 7"
-											></path>
-										</svg>
-									</div>
-									<div class="ml-3">
-										<h3 class="font-medium text-gray-900">
-											Travel History
-										</h3>
-										<p class="text-gray-600">
-											Keep track of all your bookings and
-											travel plans in one place
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="mt-8 p-4 bg-gray-50 rounded-lg">
-								<h3 class="font-medium text-gray-900 mb-2">
-									Already have an account?
-								</h3>
-								<p class="text-gray-600 mb-4">
-									Sign in to access your travel dashboard and
-									bookings.
-								</p>
-								<a
-									href="#"
-									class="text-yellow-500 hover:text-yellow-600 font-medium"
-									>Sign in here →</a
-								>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Footer -->
 		<footer class="bg-gray-900 text-white mt-12">
 			<div class="container mx-auto px-4 py-12">
 				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 					<div>
-						<h3 class="text-xl font-bold mb-4">TravelX</h3>
+						<a
+							href="index.html"
+							class="text-gray-400 hover:text-white"
+						>
+							<h3 class="text-xl font-bold mb-4">Travelpal</h3>
+						</a>
+
 						<p class="text-gray-400">Your trusted travel partner</p>
 					</div>
 					<div>
@@ -327,23 +211,23 @@
 						<ul class="space-y-2">
 							<li>
 								<a
-									href="#"
+									href="aboutus.html"
 									class="text-gray-400 hover:text-white"
 									>About Us</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="tours.html"
 									class="text-gray-400 hover:text-white"
-									>Contact</a
+									>Tours</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="contactus.html"
 									class="text-gray-400 hover:text-white"
-									>Terms & Conditions</a
+									>Contact</a
 								>
 							</li>
 						</ul>
@@ -351,12 +235,14 @@
 					<div>
 						<h4 class="font-semibold mb-4">Contact Us</h4>
 						<ul class="space-y-2">
-							<li class="text-gray-400">1234 Travel Lane</li>
 							<li class="text-gray-400">
-								Adventure City, AC 12345
+								Golden Park 3 blok H no 52
 							</li>
-							<li class="text-gray-400">1-888-TRAVEL-X</li>
-							<li class="text-gray-400">info@travelx.com</li>
+							<li class="text-gray-400">
+								Padang, Sumatera Barat
+							</li>
+							<li class="text-gray-400">+6281977516727</li>
+							<li class="text-gray-400">cs@travelpal.com</li>
 						</ul>
 					</div>
 					<div>
@@ -376,7 +262,6 @@
 				</div>
 			</div>
 		</footer>
-
 		<script>
 			$(document).ready(function () {
 				// Form submission handler

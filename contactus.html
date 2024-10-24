@@ -3,49 +3,64 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contact Us - TravelX</title>
+		<title>Travelpal - Contact Us</title>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
 	<body class="bg-gray-50">
-		<!-- Navigation -->
-		<nav class="bg-white shadow-sm">
+		<nav
+			class="bg-white shadow-sm fixed w-full z-50 transition-all duration-300"
+		>
 			<div class="container mx-auto px-4 py-3">
 				<div class="flex justify-between items-center">
-					<div class="text-2xl font-bold text-yellow-500">
-						TravelX
-					</div>
+					<a
+						href="index.html"
+						class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
+					>
+						<div
+							class="text-2xl font-bold text-yellow-500 hover:scale-105 transition-transform duration-300"
+						>
+							Travelpal
+						</div>
+					</a>
 					<div class="hidden md:flex space-x-6">
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="index.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Home</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="tours.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Tours</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
-							>Hotels</a
-						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
-							>Cars</a
+						<a
+							href="aboutus.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
+							>About Us</a
 						>
 						<a
-							href="#"
-							class="text-gray-600 hover:text-gray-900 font-semibold"
+							href="contactus.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Contact</a
 						>
 					</div>
 					<div class="flex items-center space-x-4">
-						<button
-							class="bg-yellow-500 text-white px-4 py-2 rounded-lg"
+						<a
+							href="register.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 						>
-							Sign In
-						</button>
+							<button
+								class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 hover:scale-105 transition-all duration-300"
+							>
+								Sign Up
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
-		<!-- Hero Section -->
 		<div class="relative h-[300px]">
 			<img
 				src="/api/placeholder/1200/300"
@@ -73,9 +88,7 @@
 			</div>
 		</div>
 
-		<!-- Main Content -->
 		<div class="container mx-auto px-4 py-16">
-			<!-- Contact Info Cards -->
 			<div class="max-w-5xl mx-auto mb-16">
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 					<div class="bg-white rounded-lg p-8 shadow-sm text-center">
@@ -97,8 +110,7 @@
 							</svg>
 						</div>
 						<h3 class="text-xl font-semibold mb-2">Call Us</h3>
-						<p class="text-gray-600">1-888-TRAVEL-X</p>
-						<p class="text-gray-600">Mon-Fri 9AM-6PM</p>
+						<p class="text-gray-600">+6281977156626</p>
 					</div>
 					<div class="bg-white rounded-lg p-8 shadow-sm text-center">
 						<div
@@ -119,8 +131,7 @@
 							</svg>
 						</div>
 						<h3 class="text-xl font-semibold mb-2">Email Us</h3>
-						<p class="text-gray-600">info@travelx.com</p>
-						<p class="text-gray-600">support@travelx.com</p>
+						<p class="text-gray-600">cs@travelpal.com</p>
 					</div>
 					<div class="bg-white rounded-lg p-8 shadow-sm text-center">
 						<div
@@ -147,8 +158,7 @@
 							</svg>
 						</div>
 						<h3 class="text-xl font-semibold mb-2">Visit Us</h3>
-						<p class="text-gray-600">1234 Travel Lane</p>
-						<p class="text-gray-600">Adventure City, AC 12345</p>
+						<p class="text-gray-600">Rumah saya entah dimana</p>
 					</div>
 				</div>
 			</div>
@@ -245,12 +255,17 @@
 			</div>
 		</div>
 
-		<!-- Footer -->
 		<footer class="bg-gray-900 text-white mt-12">
-			<div class="container mx-auto px-4 py-8">
-				<div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+			<div class="container mx-auto px-4 py-12">
+				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 					<div>
-						<h3 class="text-xl font-bold mb-4">TravelX</h3>
+						<a
+							href="index.html"
+							class="text-gray-400 hover:text-white"
+						>
+							<h3 class="text-xl font-bold mb-4">Travelpal</h3>
+						</a>
+
 						<p class="text-gray-400">Your trusted travel partner</p>
 					</div>
 					<div>
@@ -258,40 +273,43 @@
 						<ul class="space-y-2">
 							<li>
 								<a
-									href="#"
+									href="aboutus.html"
 									class="text-gray-400 hover:text-white"
 									>About Us</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="tours.html"
 									class="text-gray-400 hover:text-white"
-									>Contact</a
+									>Tours</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="contactus.html"
 									class="text-gray-400 hover:text-white"
-									>Terms & Conditions</a
+									>Contact</a
 								>
 							</li>
 						</ul>
 					</div>
 					<div>
-						<h4 class="font-semibold mb-4">Contact</h4>
+						<h4 class="font-semibold mb-4">Contact Us</h4>
 						<ul class="space-y-2">
-							<li class="text-gray-400">1234 Travel Lane</li>
 							<li class="text-gray-400">
-								Adventure City, AC 12345
+								Golden Park 3 blok H no 52
 							</li>
-							<li class="text-gray-400">1-888-TRAVEL-X</li>
+							<li class="text-gray-400">
+								Padang, Sumatera Barat
+							</li>
+							<li class="text-gray-400">+6281977516727</li>
+							<li class="text-gray-400">cs@travelpal.com</li>
 						</ul>
 					</div>
 					<div>
 						<h4 class="font-semibold mb-4">Follow Us</h4>
-						<div class="flex justify-center space-x-4">
+						<div class="flex space-x-4">
 							<a href="#" class="text-gray-400 hover:text-white"
 								>Facebook</a
 							>

@@ -7,7 +7,7 @@
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
-	<body class="bg-gray-50">
+	<body class="bg-gray-50 tour-card">
 		<nav
 			class="bg-white shadow-sm fixed w-full z-50 transition-all duration-300"
 		>
@@ -73,7 +73,9 @@
 						class="text-white bg-yellow-500 px-3 py-1 rounded text-sm"
 						>Beach Tour</span
 					>
-					<h1 class="text-4xl md:text-5xl font-bold text-white mt-4">
+					<h1
+						class="text-4xl md:text-5xl font-bold text-white mt-4 tour-name"
+					>
 						Bali Beach
 					</h1>
 					<div class="flex items-center space-x-4 mt-4">
@@ -179,7 +181,8 @@
 					<div class="bg-white rounded-lg shadow-sm p-6 sticky top-8">
 						<div class="flex justify-between items-center mb-6">
 							<div>
-								<span class="text-3xl font-bold text-yellow-500"
+								<span
+									class="text-3xl font-bold text-yellow-500 tour-price"
 									>Rp 4.000.000</span
 								>
 								<span class="text-gray-600">/person</span>
@@ -192,7 +195,7 @@
 						<form id="bookingForm" class="space-y-4">
 							<button
 								type="submit"
-								class="w-full bg-yellow-500 text-white py-3 rounded-lg hover:bg-yellow-600"
+								class="w-full bg-yellow-500 text-white py-3 rounded-lg hover:bg-yellow-600 book-now-btn"
 							>
 								Book Now
 							</button>
@@ -447,28 +450,9 @@
 		</footer>
 
 		<script>
+			const toastHTML = `<div id="toast-container" class="fixed top-4 right-4 z-50 flex flex-col gap-4"></div>`;
+			document.body.insertAdjacentHTML("beforeend", toastHTML);
 			$(document).ready(function () {
-				new Swiper(".featured-tours", {
-					slidesPerView: 1,
-					spaceBetween: 20,
-					navigation: {
-						nextEl: ".swiper-button-next",
-						prevEl: ".swiper-button-prev",
-					},
-					breakpoints: {
-						640: {
-							slidesPerView: 2,
-						},
-						768: {
-							slidesPerView: 3,
-						},
-						1024: {
-							slidesPerView: 4,
-						},
-					},
-				});
-
-				// Smooth scroll for navigation links
 				$('a[href^="#"]').on("click", function (e) {
 					e.preventDefault();
 					$("html, body").animate(
@@ -479,30 +463,32 @@
 					);
 				});
 
-				// Mobile menu toggle
 				$(".mobile-menu-button").on("click", function () {
 					$(".mobile-menu").toggleClass("hidden");
 				});
 			});
 
-			//booking modal
-
 			$(".book-now-btn").on("click", function (e) {
 				e.preventDefault();
 				const tourCard = $(this).closest(".tour-card");
-				const tourName = tourCard.find(".tour-name").text();
-				const tourPrice = tourCard.find(".tour-price").text();
+				const tourName = tourCard.find(".tour-name").text().trim();
+				const tourPrice = tourCard.find(".tour-price").text().trim();
 
-				openBookingModal(tourName, tourPrice);
+				$("#tourDestination").val(tourName);
+				$("#tourPrice").val(tourPrice);
+				$("#ticketQuantity").val(1);
+				updateTotalAmount();
+
+				$("#ticketModal").removeClass("hidden").fadeIn(300);
 			});
 
 			$("#closeModal").on("click", function () {
-				$("#ticketModal").fadeOut();
+				$("#ticketModal").fadeOut(300);
 			});
 
 			$(window).on("click", function (e) {
 				if ($(e.target).is("#ticketModal")) {
-					$("#ticketModal").fadeOut();
+					$("#ticketModal").fadeOut(300);
 				}
 			});
 
@@ -513,51 +499,124 @@
 			$("#ticketForm").on("submit", function (e) {
 				e.preventDefault();
 
-				// Basic validation
-				const email = $("#contactEmail").val();
-				const date = $("#tourDate").val();
+				const formData = {
+					tour: $("#tourDestination").val(),
+					date: $("#tourDate").val(),
+					quantity: $("#ticketQuantity").val(),
+					name: $("#fullName").val(),
+					email: $("#contactEmail").val(),
+					requests: $("#specialRequests").val(),
+					total: $("#totalAmount").text(),
+				};
 
-				if (!email || !date) {
-					alert("Please fill in all required fields");
+				// Validate form
+				if (!formData.date || !formData.name || !formData.email) {
+					showToast("Please fill in all required fields", "error");
 					return;
 				}
 
-				const bookingData = {
-					tour: $("#tourDestination").val(),
-					price: $("#tourPrice").val(),
-					quantity: $("#ticketQuantity").val(),
-					date: date,
-					email: email,
-					totalAmount: $("#totalAmount").text(),
-				};
+				// Show success message
+				showToast("Booking Confirmed!", "success");
 
-				alert(
-					"Booking successful!\n\nBooking Details:\n" +
-						`Tour: ${bookingData.tour}\n` +
-						`Date: ${bookingData.date}\n` +
-						`Quantity: ${bookingData.quantity}\n` +
-						`Total: ${bookingData.totalAmount}`
-				);
+				// Show booking details in a second toast
+				setTimeout(() => {
+					showToast(
+						`
+                <div class="font-semibold mb-1">Booking Details:</div>
+                <div class="text-sm">
+                    <div>Tour: ${formData.tour}</div>
+                    <div>Date: ${formData.date}</div>
+                    <div>Travelers: ${formData.quantity}</div>
+                    <div>Total: ${formData.total}</div>
+                </div>
+                <div class="text-xs mt-1">Confirmation sent to ${formData.email}</div>
+            `,
+						"info",
+						8000
+					);
+				}, 500);
 
-				$("#ticketModal").fadeOut();
+				// Reset form and close modal
 				$("#ticketForm")[0].reset();
+				$("#ticketModal").fadeOut(300);
 			});
-
-			function openBookingModal(tourName, tourPrice) {
-				$("#tourDestination").val(tourName);
-				$("#tourPrice").val(tourPrice);
-				$("#ticketQuantity").val(1);
-				updateTotalAmount();
-				$("#ticketModal").fadeIn();
-			}
 
 			function updateTotalAmount() {
 				const price = parseFloat(
-					$("#tourPrice").val().replace("$", "")
+					$("#tourPrice").val().replace("Rp", "").replace(/\./g, "")
 				);
-				const quantity = parseInt($("#ticketQuantity").val());
+				const quantity = parseInt($("#ticketQuantity").val()) || 1;
 				const total = price * quantity;
-				$("#totalAmount").text(`$${total.toFixed(2)}`);
+				const formattedTotal = new Intl.NumberFormat("id-ID", {
+					style: "currency",
+					currency: "IDR",
+					minimumFractionDigits: 0,
+					maximumFractionDigits: 0,
+				}).format(total);
+				$("#totalAmount").text(`${formattedTotal}`);
+			}
+
+			function showToast(message, type = "info", duration = 4000) {
+				const types = {
+					success: "bg-green-500",
+					error: "bg-red-500",
+					info: "bg-blue-500",
+					warning: "bg-yellow-500",
+				};
+
+				const icons = {
+					success: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                     </svg>`,
+					error: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>`,
+					info: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>`,
+					warning: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                     </svg>`,
+				};
+
+				const toast = $(`
+            <div class="transform transition-all duration-300 translate-x-full">
+                <div class="flex items-center p-4 rounded-lg shadow-lg ${types[type]} text-white min-w-[300px] max-w-[500px]">
+                    <div class="mr-3">
+                        ${icons[type]}
+                    </div>
+                    <div class="flex-1">
+                        ${message}
+                    </div>
+                    <button class="ml-4 hover:opacity-75 transition-opacity duration-300 close-toast">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        `);
+
+				$("#toast-container").append(toast);
+
+				setTimeout(() => {
+					toast.removeClass("translate-x-full");
+				}, 100);
+
+				setTimeout(() => {
+					removeToast(toast);
+				}, duration);
+
+				toast.find(".close-toast").on("click", function () {
+					removeToast(toast);
+				});
+			}
+
+			function removeToast(toast) {
+				toast.addClass("translate-x-full");
+				setTimeout(() => {
+					toast.remove();
+				}, 300);
 			}
 		</script>
 	</body>

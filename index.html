@@ -75,162 +75,170 @@
 			<div
 				class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/20 to-black/20"
 			></div>
-			<div
-				class="absolute inset-0 flex flex-col items-center justify-center px-4"
-			>
-				<div
-					class="text-center text-white max-w-5xl mx-auto space-y-6 transform -translate-y-10"
-				>
-					<h1
-						class="text-5xl md:text-7xl font-bold mb-6 leading-tight hover:scale-105 transition-transform duration-300"
-					>
-						Explore the Wonders of
-						<span class="text-yellow-400">Indonesia</span>
-					</h1>
-					<p
-						class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto"
-					>
-						Discover breathtaking destinations and create
-						unforgettable memories
-					</p>
-					<div
-						class="flex justify-center space-x-8 mb-10 text-gray-200"
-					>
-						<div class="text-center">
-							<div class="text-3xl font-bold text-yellow-400">
-								500+
-							</div>
-							<div class="text-sm">Destinations</div>
-						</div>
-						<div class="text-center">
-							<div class="text-3xl font-bold text-yellow-400">
-								10k+
-							</div>
-							<div class="text-sm">Happy Travelers</div>
-						</div>
-						<div class="text-center">
-							<div class="text-3xl font-bold text-yellow-400">
-								98%
-							</div>
-							<div class="text-sm">Satisfaction Rate</div>
-						</div>
-					</div>
-					<div
-						class="bg-white/95 backdrop-blur-lg rounded-2xl p-6 max-w-4xl mx-auto shadow-2xl transform hover:scale-102 transition-all duration-300"
-					>
-						<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-							<div class="relative">
-								<div
-									class="absolute inset-y-0 left-3 flex items-center text-gray-400"
-								>
-									<svg
-										class="w-5 h-5"
-										fill="none"
-										stroke="currentColor"
-										viewBox="0 0 24 24"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-										/>
-									</svg>
-								</div>
-								<input
-									type="text"
-									placeholder="Where to?"
-									class="w-full pl-10 p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
-								/>
-							</div>
-							<div class="relative">
-								<div
-									class="absolute inset-y-0 left-3 flex items-center text-gray-400"
-								>
-									<svg
-										class="w-5 h-5"
-										fill="none"
-										stroke="currentColor"
-										viewBox="0 0 24 24"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-										/>
-									</svg>
-								</div>
-								<input
-									type="date"
-									class="w-full pl-10 p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
-								/>
-							</div>
-							<div class="relative">
-								<div
-									class="absolute inset-y-0 left-3 flex items-center text-gray-400"
-								>
-									<svg
-										class="w-5 h-5"
-										fill="none"
-										stroke="currentColor"
-										viewBox="0 0 24 24"
-									>
-										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
-											d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-										/>
-									</svg>
-								</div>
-								<input
-									type="number"
-									placeholder="Guests"
-									min="1"
-									class="w-full pl-10 p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
-								/>
-							</div>
 
-							<!-- Search Button -->
-							<button
-								class="bg-yellow-500 text-white p-3 rounded-xl hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+			<div class="absolute inset-0 flex items-center justify-center px-4">
+				<div class="w-full max-w-5xl mx-auto">
+					<div class="text-center text-white space-y-6">
+						<div class="space-y-4">
+							<h1
+								class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight hover:scale-105 transition-transform duration-300"
 							>
-								<svg
-									class="w-5 h-5"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+								Explore the Wonders of
+								<span class="text-yellow-400">Indonesia</span>
+							</h1>
+							<p
+								class="text-lg sm:text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto"
+							>
+								Discover breathtaking destinations and create
+								unforgettable memories
+							</p>
+						</div>
+
+						<!-- Stats Section -->
+						<div
+							class="hidden md:flex justify-center space-x-8 text-gray-200"
+						>
+							<div class="text-center">
+								<div class="text-3xl font-bold text-yellow-400">
+									500+
+								</div>
+								<div class="text-sm">Destinations</div>
+							</div>
+							<div class="text-center">
+								<div class="text-3xl font-bold text-yellow-400">
+									10k+
+								</div>
+								<div class="text-sm">Happy Travelers</div>
+							</div>
+							<div class="text-center">
+								<div class="text-3xl font-bold text-yellow-400">
+									98%
+								</div>
+								<div class="text-sm">Satisfaction Rate</div>
+							</div>
+						</div>
+						<div
+							class="bg-white/95 backdrop-blur-lg rounded-2xl p-4 sm:p-6 mx-auto shadow-2xl transform hover:scale-102 transition-all duration-300"
+						>
+							<div
+								class="grid grid-cols-1 md:grid-cols-4 gap-3 sm:gap-4"
+							>
+								<div class="relative">
+									<div
+										class="absolute inset-y-0 left-3 flex items-center text-gray-400"
+									>
+										<svg
+											class="w-5 h-5"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+											/>
+										</svg>
+									</div>
+									<input
+										type="text"
+										placeholder="Where to?"
+										class="w-full pl-10 p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
 									/>
-								</svg>
-								<span>Search</span>
-							</button>
+								</div>
+								<div class="relative">
+									<div
+										class="absolute inset-y-0 left-3 flex items-center text-gray-400"
+									>
+										<svg
+											class="w-5 h-5"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+											/>
+										</svg>
+									</div>
+									<input
+										type="date"
+										class="w-full pl-10 p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+									/>
+								</div>
+								<div class="relative">
+									<div
+										class="absolute inset-y-0 left-3 flex items-center text-gray-400"
+									>
+										<svg
+											class="w-5 h-5"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+											/>
+										</svg>
+									</div>
+									<input
+										type="number"
+										placeholder="Guests"
+										min="1"
+										class="w-full pl-10 p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+									/>
+								</div>
+
+								
+									<button
+										class="bg-yellow-500 text-white p-3 rounded-xl hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+									>
+										<svg
+											class="w-5 h-5"
+											fill="none"
+											stroke="currentColor"
+											viewBox="0 0 24 24"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+												d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+											/>
+										</svg>
+										<span>Search</span>
+									</button>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div
-					class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+			</div>
+
+			<!-- Scroll Indicator -->
+			<div
+				class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+			>
+				<svg
+					class="w-6 h-6 text-white"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
 				>
-					<svg
-						class="w-6 h-6 text-white"
-						fill="none"
-						stroke="currentColor"
-						viewBox="0 0 24 24"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M19 14l-7 7m0 0l-7-7m7 7V3"
-						/>
-					</svg>
-				</div>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M19 14l-7 7m0 0l-7-7m7 7V3"
+					/>
+				</svg>
 			</div>
 		</div>
 		<div class="container mx-auto px-4 py-12">
@@ -714,57 +722,46 @@
 					What Our Travelers Say
 				</h2>
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-					<!-- Testimonial 1 -->
-					<div
-						class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300"
-					>
+					<div class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
 						<div class="flex items-center mb-4">
 							<img
-								src="/api/placeholder/64/64"
-								alt="User"
-								class="w-16 h-16 rounded-full"
+								src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+								alt="Linna Septiana"
+								class="w-16 h-16 rounded-full object-cover"
 							/>
 							<div class="ml-4">
-								<h4 class="font-semibold">Sarah Johnson</h4>
+								<h4 class="font-semibold">Linna Septiana</h4>
 								<p class="text-yellow-500">★★★★★</p>
 							</div>
 						</div>
 						<p class="text-gray-600">
-							"The Grand Canyon Adventure was breathtaking! The
-							guides were knowledgeable and the entire experience
-							exceeded my expectations. Will definitely book
-							again!"
+							"IKN was really great, but nothing much to do here except watching construction people working, oh the president wasn't here tho. maybe next year?"
 						</p>
 					</div>
-					<div
-						class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300"
-					>
+					
+					<div class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
 						<div class="flex items-center mb-4">
 							<img
-								src="/api/placeholder/64/64"
-								alt="User"
-								class="w-16 h-16 rounded-full"
+								src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+								alt="Marco Wijaya"
+								class="w-16 h-16 rounded-full object-cover"
 							/>
 							<div class="ml-4">
-								<h4 class="font-semibold">Michael Chen</h4>
+								<h4 class="font-semibold">Marco Wijaya</h4>
 								<p class="text-yellow-500">★★★★★</p>
 							</div>
 						</div>
 						<p class="text-gray-600">
-							"Hawaii Beach Vacation was pure paradise! Everything
-							was perfectly organized, from the hotel to the
-							activities. It was the dream vacation I've always
-							wanted."
+							"I Go to Padang beach because i was sick of people telling Bali has the most beautiful beach in Indonesia, but after i spent about 2 days in here, ...yeah Bali was better"
 						</p>
 					</div>
-					<div
-						class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300"
-					>
+					
+					<div class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300">
 						<div class="flex items-center mb-4">
 							<img
-								src="/api/placeholder/64/64"
-								alt="User"
-								class="w-16 h-16 rounded-full"
+								src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
+								alt="Emma Davis"
+								class="w-16 h-16 rounded-full object-cover"
 							/>
 							<div class="ml-4">
 								<h4 class="font-semibold">Emma Davis</h4>
@@ -772,9 +769,7 @@
 							</div>
 						</div>
 						<p class="text-gray-600">
-							"The California Desert Tour was an incredible
-							adventure! The sunset views were spectacular, and
-							the camping experience was unforgettable."
+							"Seeing Komodo was a really awesome moment for me, nothing beats this majestic creature in this entire world!!"
 						</p>
 					</div>
 				</div>
