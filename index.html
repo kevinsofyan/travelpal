@@ -18,44 +18,49 @@
 		>
 			<div class="container mx-auto px-4 py-3">
 				<div class="flex justify-between items-center">
-					<div
-						class="text-2xl font-bold text-yellow-500 hover:scale-105 transition-transform duration-300"
+					<a
+						href="index.html"
+						class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 					>
-						Travelpal
-					</div>
+						<div
+							class="text-2xl font-bold text-yellow-500 hover:scale-105 transition-transform duration-300"
+						>
+							Travelpal
+						</div>
+					</a>
 					<div class="hidden md:flex space-x-6">
 						<a
-							href="#"
+							href="index.html"
 							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Home</a
 						>
 						<a
-							href="#"
+							href="tours.html"
 							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Tours</a
 						>
 						<a
-							href="#"
+							href="aboutus.html"
 							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
-							>Hotels</a
+							>About Us</a
 						>
 						<a
-							href="#"
-							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
-							>Cars</a
-						>
-						<a
-							href="#"
+							href="contactus.html"
 							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Contact</a
 						>
 					</div>
 					<div class="flex items-center space-x-4">
-						<button
-							class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 hover:scale-105 transition-all duration-300"
+						<a
+							href="register.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 						>
-							Sign In
-						</button>
+							<button
+								class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 hover:scale-105 transition-all duration-300"
+							>
+								Sign Up
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -88,8 +93,6 @@
 						Discover breathtaking destinations and create
 						unforgettable memories
 					</p>
-
-					<!-- Stats Bar -->
 					<div
 						class="flex justify-center space-x-8 mb-10 text-gray-200"
 					>
@@ -140,8 +143,6 @@
 									class="w-full pl-10 p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
 								/>
 							</div>
-
-							<!-- Date Input -->
 							<div class="relative">
 								<div
 									class="absolute inset-y-0 left-3 flex items-center text-gray-400"
@@ -239,236 +240,261 @@
 				>
 					Our Featured Tours
 				</h2>
-				<button
-					class="text-yellow-500 hover:scale-110 transition-transform duration-300"
-				>
-					View All
-				</button>
+				<a href="tours.html">
+					<button
+						class="text-yellow-500 hover:scale-110 transition-transform duration-300"
+					>
+						View All
+					</button>
+				</a>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
-				>
-					<div class="relative overflow-hidden">
+				<a href="detail.html">
+					<div
+						class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+					>
+						<div class="relative overflow-hidden">
+							<img
+								src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=300&h=200&fit=crop"
+								alt="Bali Beach Tour"
+								class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+							/>
+						</div>
+						<div class="p-4">
+							<h3
+								class="font-semibold mb-2 group-hover:text-yellow-500 transition-colors duration-300 tour-name"
+							>
+								Bali beach tour
+							</h3>
+							<p class="text-gray-600 text-sm mb-2">
+								3 Days 2 Nights
+							</p>
+							<div class="flex justify-between items-center">
+								<span
+									class="text-yellow-500 font-bold tour-price"
+									>Rp 4.000.000</span
+								>
+								<button
+									class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+								>
+									Book Now
+								</button>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="detail.html">
+					<div
+						class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+					>
 						<img
-							src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=300&h=200&fit=crop"
-							alt="Bali Beach Tour"
+							src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=300&h=200&fit=crop"
+							alt="Raja Ampat Diving"
 							class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
 						/>
-					</div>
-					<div class="p-4">
-						<h3
-							class="font-semibold mb-2 group-hover:text-yellow-500 transition-colors duration-300 tour-name"
-						>
-							Bali beach tour
-						</h3>
-						<p class="text-gray-600 text-sm mb-2">
-							3 Days 2 Nights
-						</p>
-						<div class="flex justify-between items-center">
-							<span class="text-yellow-500 font-bold tour-price"
-								>Rp 4.000.000</span
-							>
-							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
-							>
-								Book Now
-							</button>
-						</div>
-					</div>
-				</div>
-				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
-				>
-					<img
-						src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=300&h=200&fit=crop"
-						alt="Raja Ampat Diving"
-						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-					/>
 
-					<div class="p-4">
-						<h3 class="font-semibold mb-2 tour-name">
-							Raja Ampat diving
-						</h3>
-						<p class="text-gray-600 text-sm mb-2">
-							4 Days 3 Nights
-						</p>
-						<div class="flex justify-between items-center">
-							<span class="text-yellow-500 font-bold tour-price"
-								>Rp 10.000.000</span
-							>
-							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
-							>
-								Book Now
-							</button>
+						<div class="p-4">
+							<h3 class="font-semibold mb-2 tour-name">
+								Raja Ampat diving
+							</h3>
+							<p class="text-gray-600 text-sm mb-2">
+								4 Days 3 Nights
+							</p>
+							<div class="flex justify-between items-center">
+								<span
+									class="text-yellow-500 font-bold tour-price"
+									>Rp 10.000.000</span
+								>
+								<button
+									class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+								>
+									Book Now
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
+				</a>
+				<a href="detail.html">
+					<div
+						class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+					>
+						<img
+							src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+							alt="Mount Rinjani"
+							class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+						/>
 
-				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
-				>
-					<img
-						src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
-						alt="Mount Rinjani"
-						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-					/>
-
-					<div class="p-4">
-						<h3 class="font-semibold mb-2 tour-name">
-							Mount Rinjani
-						</h3>
-						<p class="text-gray-600 text-sm mb-2">
-							5 Days 4 Nights
-						</p>
-						<div class="flex justify-between items-center">
-							<span class="text-yellow-500 font-bold tour-price"
-								>Rp 3.000.000</span
-							>
-							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
-							>
-								Book Now
-							</button>
+						<div class="p-4">
+							<h3 class="font-semibold mb-2 tour-name">
+								Mount Rinjani
+							</h3>
+							<p class="text-gray-600 text-sm mb-2">
+								5 Days 4 Nights
+							</p>
+							<div class="flex justify-between items-center">
+								<span
+									class="text-yellow-500 font-bold tour-price"
+									>Rp 3.000.000</span
+								>
+								<button
+									class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+								>
+									Book Now
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
-				>
-					<img
-						src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=300&h=200&fit=crop"
-						alt="Old Jakarta Tour"
-						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-					/>
-					<div class="p-4">
-						<h3 class="font-semibold mb-2 tour-name">
-							Old Town Jakarta Tour
-						</h3>
-						<p class="text-gray-600 text-sm mb-2">
-							7 Days 6 Nights
-						</p>
-						<div class="flex justify-between items-center">
-							<span class="text-yellow-500 font-bold tour-price"
-								>Rp 8.000.000</span
-							>
-							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
-							>
-								Book Now
-							</button>
+				</a>
+				<a href="detail.html">
+					<div
+						class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+					>
+						<img
+							src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=300&h=200&fit=crop"
+							alt="Old Jakarta Tour"
+							class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+						/>
+						<div class="p-4">
+							<h3 class="font-semibold mb-2 tour-name">
+								Old Town Jakarta Tour
+							</h3>
+							<p class="text-gray-600 text-sm mb-2">
+								7 Days 6 Nights
+							</p>
+							<div class="flex justify-between items-center">
+								<span
+									class="text-yellow-500 font-bold tour-price"
+									>Rp 8.000.000</span
+								>
+								<button
+									class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+								>
+									Book Now
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
-				>
-					<img
-						src="https://images.pexels.com/photos/1732281/pexels-photo-1732281.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
-						alt="Sukabumi Rafting"
-						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-					/>
-					<div class="p-4">
-						<h3 class="font-semibold mb-2 tour-name">
-							Sukabumi Rafting
-						</h3>
-						<p class="text-gray-600 text-sm mb-2">1 Days</p>
-						<div class="flex justify-between items-center">
-							<span class="text-yellow-500 font-bold tour-price"
-								>Rp 1.500.000</span
-							>
-							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
-							>
-								Book Now
-							</button>
+				</a>
+				<a href="detail.html">
+					<div
+						class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+					>
+						<img
+							src="https://images.pexels.com/photos/1732281/pexels-photo-1732281.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+							alt="Sukabumi Rafting"
+							class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+						/>
+						<div class="p-4">
+							<h3 class="font-semibold mb-2 tour-name">
+								Sukabumi Rafting
+							</h3>
+							<p class="text-gray-600 text-sm mb-2">1 Days</p>
+							<div class="flex justify-between items-center">
+								<span
+									class="text-yellow-500 font-bold tour-price"
+									>Rp 1.500.000</span
+								>
+								<button
+									class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+								>
+									Book Now
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
-				>
-					<img
-						src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=300&h=200&fit=crop"
-						alt="Padang Beach"
-						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-					/>
-					<div class="p-4">
-						<h3 class="font-semibold mb-2 tour-name">
-							Padang Beach
-						</h3>
-						<p class="text-gray-600 text-sm mb-2">
-							3 Days 2 nights
-						</p>
-						<div class="flex justify-between items-center">
-							<span class="text-yellow-500 font-bold tour-price"
-								>Rp 2.500.000</span
-							>
-							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
-							>
-								Book Now
-							</button>
+				</a>
+				<a href="detail.html">
+					<div
+						class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+					>
+						<img
+							src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=300&h=200&fit=crop"
+							alt="Padang Beach"
+							class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+						/>
+						<div class="p-4">
+							<h3 class="font-semibold mb-2 tour-name">
+								Padang Beach
+							</h3>
+							<p class="text-gray-600 text-sm mb-2">
+								3 Days 2 nights
+							</p>
+							<div class="flex justify-between items-center">
+								<span
+									class="text-yellow-500 font-bold tour-price"
+									>Rp 2.500.000</span
+								>
+								<button
+									class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+								>
+									Book Now
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
-				>
-					<img
-						src="https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
-						alt="Komodo Island Tour"
-						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-					/>
-					<div class="p-4">
-						<h3 class="font-semibold mb-2 tour-name">
-							Komodo Island Tour
-						</h3>
-						<p class="text-gray-600 text-sm mb-2">
-							3 Days 2 nights
-						</p>
-						<div class="flex justify-between items-center">
-							<span class="text-yellow-500 font-bold tour-price"
-								>Rp 20.500.000</span
-							>
-							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
-							>
-								Book Now
-							</button>
+				</a>
+				<a href="detail.html">
+					<div
+						class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+					>
+						<img
+							src="https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+							alt="Komodo Island Tour"
+							class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+						/>
+						<div class="p-4">
+							<h3 class="font-semibold mb-2 tour-name">
+								Komodo Island Tour
+							</h3>
+							<p class="text-gray-600 text-sm mb-2">
+								3 Days 2 nights
+							</p>
+							<div class="flex justify-between items-center">
+								<span
+									class="text-yellow-500 font-bold tour-price"
+									>Rp 20.500.000</span
+								>
+								<button
+									class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+								>
+									Book Now
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
-				>
-					<img
-						src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
-						alt="IKN Tour"
-						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-					/>
-					<div class="p-4">
-						<h3 class="font-semibold mb-2 tour-name">IKN Tour</h3>
-						<p class="text-gray-600 text-sm mb-2">
-							3 Days 2 nights
-						</p>
-						<div class="flex justify-between items-center">
-							<span class="text-yellow-500 font-bold tour-price"
-								>Rp 100.500.000</span
-							>
-							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
-							>
-								Book Now
-							</button>
+				</a>
+				<a href="detail.html">
+					<div
+						class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+					>
+						<img
+							src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+							alt="IKN Tour"
+							class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+						/>
+						<div class="p-4">
+							<h3 class="font-semibold mb-2 tour-name">
+								IKN Tour
+							</h3>
+							<p class="text-gray-600 text-sm mb-2">
+								3 Days 2 nights
+							</p>
+							<div class="flex justify-between items-center">
+								<span
+									class="text-yellow-500 font-bold tour-price"
+									>Rp 100.500.000</span
+								>
+								<button
+									class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+								>
+									Book Now
+								</button>
+							</div>
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
-
-		<!-- Categories -->
 		<div class="container mx-auto px-4 py-12">
 			<h2 class="text-2xl font-bold mb-6">Top Categories of Tours</h2>
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -545,8 +571,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- Booking Modal -->
 		<div
 			id="ticketModal"
 			class="fixed inset-0 bg-black bg-opacity-50 hidden z-50"
@@ -712,8 +736,6 @@
 							again!"
 						</p>
 					</div>
-
-					<!-- Testimonial 2 -->
 					<div
 						class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300"
 					>
@@ -735,8 +757,6 @@
 							wanted."
 						</p>
 					</div>
-
-					<!-- Testimonial 3 -->
 					<div
 						class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300"
 					>
@@ -761,11 +781,9 @@
 			</div>
 		</div>
 
-		<!-- Why Choose Us Section -->
 		<div class="container mx-auto px-4 py-16">
 			<h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
 			<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-				<!-- Feature 1 -->
 				<div
 					class="group text-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
 				>
@@ -913,12 +931,17 @@
 				</div>
 			</div>
 		</div>
-		<!-- Footer -->
 		<footer class="bg-gray-900 text-white mt-12">
 			<div class="container mx-auto px-4 py-12">
 				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 					<div>
-						<h3 class="text-xl font-bold mb-4">TravelX</h3>
+						<a
+							href="index.html"
+							class="text-gray-400 hover:text-white"
+						>
+							<h3 class="text-xl font-bold mb-4">Travelpal</h3>
+						</a>
+
 						<p class="text-gray-400">Your trusted travel partner</p>
 					</div>
 					<div>
@@ -926,23 +949,23 @@
 						<ul class="space-y-2">
 							<li>
 								<a
-									href="#"
+									href="aboutus.html"
 									class="text-gray-400 hover:text-white"
 									>About Us</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="tours.html"
 									class="text-gray-400 hover:text-white"
-									>Contact</a
+									>Tours</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="contactus.html"
 									class="text-gray-400 hover:text-white"
-									>Terms & Conditions</a
+									>Contact</a
 								>
 							</li>
 						</ul>
@@ -950,12 +973,14 @@
 					<div>
 						<h4 class="font-semibold mb-4">Contact Us</h4>
 						<ul class="space-y-2">
-							<li class="text-gray-400">1234 Travel Lane</li>
 							<li class="text-gray-400">
-								Adventure City, AC 12345
+								Golden Park 3 blok H no 52
 							</li>
-							<li class="text-gray-400">1-888-TRAVEL-X</li>
-							<li class="text-gray-400">info@travelx.com</li>
+							<li class="text-gray-400">
+								Padang, Sumatera Barat
+							</li>
+							<li class="text-gray-400">+6281977516727</li>
+							<li class="text-gray-400">cs@travelpal.com</li>
 						</ul>
 					</div>
 					<div>
@@ -981,26 +1006,6 @@
 			document.body.insertAdjacentHTML("beforeend", toastHTML);
 
 			$(document).ready(function () {
-				new Swiper(".featured-tours", {
-					slidesPerView: 1,
-					spaceBetween: 20,
-					navigation: {
-						nextEl: ".swiper-button-next",
-						prevEl: ".swiper-button-prev",
-					},
-					breakpoints: {
-						640: {
-							slidesPerView: 2,
-						},
-						768: {
-							slidesPerView: 3,
-						},
-						1024: {
-							slidesPerView: 4,
-						},
-					},
-				});
-
 				$('a[href^="#"]').on("click", function (e) {
 					e.preventDefault();
 					$("html, body").animate(
@@ -1015,8 +1020,6 @@
 					$(".mobile-menu").toggleClass("hidden");
 				});
 			});
-
-			// Modal Functions
 
 			$(".book-now-btn").on("click", function (e) {
 				e.preventDefault();

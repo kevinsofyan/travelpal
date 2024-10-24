@@ -8,48 +8,64 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
 	<body class="bg-gray-50">
-		<!-- Navigation -->
-		<nav class="bg-white shadow-sm">
+		<nav
+			class="bg-white shadow-sm fixed w-full z-50 transition-all duration-300"
+		>
 			<div class="container mx-auto px-4 py-3">
 				<div class="flex justify-between items-center">
-					<div class="text-2xl font-bold text-yellow-500">
-						TravelX
-					</div>
+					<a
+						href="index.html"
+						class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
+					>
+						<div
+							class="text-2xl font-bold text-yellow-500 hover:scale-105 transition-transform duration-300"
+						>
+							Travelpal
+						</div>
+					</a>
 					<div class="hidden md:flex space-x-6">
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="index.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Home</a
 						>
 						<a
-							href="#"
-							class="text-gray-600 hover:text-gray-900 font-semibold"
+							href="tours.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Tours</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
-							>Hotels</a
+						<a
+							href="aboutus.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
+							>About Us</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
-							>Cars</a
-						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="contactus.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Contact</a
 						>
 					</div>
 					<div class="flex items-center space-x-4">
-						<button
-							class="bg-yellow-500 text-white px-4 py-2 rounded-lg"
+						<a
+							href="register.html"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 						>
-							Sign In
-						</button>
+							<button
+								class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 hover:scale-105 transition-all duration-300"
+							>
+								Sign Up
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
 		<!-- Page Header -->
-		<div class="relative h-[300px] bg-blue-100">
+		<div class="relative h-[400px] bg-blue-100">
 			<img
-				src="/api/placeholder/1200/300"
-				alt="Tours"
+				src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=1800&h=400&fit=crop"
+				alt="Majestic Borobudur Temple at sunrise"
 				class="w-full h-full object-cover"
 			/>
 			<div class="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -113,9 +129,9 @@
 									<input
 										type="checkbox"
 										class="form-checkbox text-yellow-500"
-										value="desert"
+										value="historical"
 									/>
-									<span>Desert Tours</span>
+									<span>Historical Tours</span>
 								</label>
 							</div>
 						</div>
@@ -130,36 +146,32 @@
 										type="radio"
 										name="price"
 										class="form-radio text-yellow-500"
-										value="0-100"
 									/>
-									<span>$0 - $100</span>
+									<span>Rp 1.000.000 - RP 5.000.000</span>
 								</label>
 								<label class="flex items-center space-x-2">
 									<input
 										type="radio"
 										name="price"
 										class="form-radio text-yellow-500"
-										value="101-200"
 									/>
-									<span>$101 - $200</span>
+									<span>Rp 5.000.000 - RP 10.000.000</span>
 								</label>
 								<label class="flex items-center space-x-2">
 									<input
 										type="radio"
 										name="price"
 										class="form-radio text-yellow-500"
-										value="201-500"
 									/>
-									<span>$201 - $500</span>
+									<span>Rp 10.000.000 - RP 20.000.000</span>
 								</label>
 								<label class="flex items-center space-x-2">
 									<input
 										type="radio"
 										name="price"
 										class="form-radio text-yellow-500"
-										value="501+"
 									/>
-									<span>$501+</span>
+									<span>> RP 20.000.000</span>
 								</label>
 							</div>
 						</div>
@@ -201,162 +213,316 @@
 						</button>
 					</div>
 				</div>
-
-				<!-- Tours Grid -->
 				<div class="w-full md:w-3/4">
 					<div
 						class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
 					>
-						<!-- Beach Tour -->
 						<div
-							class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+							class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
 							data-category="beach"
 						>
-							<img
-								src="/api/placeholder/300/200"
-								alt="Bali Beach"
-								class="w-full h-48 object-cover"
-							/>
-							<div class="p-4">
-								<span
-									class="text-xs font-semibold text-yellow-500 bg-yellow-100 px-2 py-1 rounded"
-									>Beach</span
-								>
-								<h3 class="font-semibold my-2 tour-name">
-									Bali Beach Paradise
-								</h3>
-								<p class="text-gray-600 text-sm mb-2">
-									5 Days 4 Nights
-								</p>
-								<div class="flex justify-between items-center">
-									<span
-										class="text-yellow-500 font-bold tour-price"
-										>$599.99</span
-									>
-									<button
-										class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
-									>
-										Book Now
-									</button>
+							<a href="detail.html">
+								<div class="relative overflow-hidden">
+									<img
+										src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=300&h=200&fit=crop"
+										alt="Bali Beach Tour"
+										class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+									/>
 								</div>
-							</div>
+								<div class="p-4">
+									<span
+										class="absolute top-2 right-2 text-xs font-semibold text-yellow-500 bg-yellow-100 px-2 py-1 rounded"
+										>Beach</span
+									>
+									<h3
+										class="font-semibold mb-2 group-hover:text-yellow-500 transition-colors duration-300 tour-name"
+									>
+										Bali beach tour
+									</h3>
+									<p class="text-gray-600 text-sm mb-2">
+										3 Days 2 Nights
+									</p>
+									<div
+										class="flex justify-between items-center"
+									>
+										<span
+											class="text-yellow-500 font-bold tour-price"
+											>Rp 4.000.000</span
+										>
+										<button
+											class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+										>
+											Book Now
+										</button>
+									</div>
+								</div>
+							</a>
 						</div>
-
-						<!-- Mountain Tour -->
 						<div
-							class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+							class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+							data-category="beach"
+						>
+							<a href="detail.html">
+								<img
+									src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=300&h=200&fit=crop"
+									alt="Raja Ampat Diving"
+									class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+								/>
+
+								<div class="p-4">
+									<span
+										class="absolute top-2 right-2 text-xs font-semibold text-yellow-500 bg-yellow-100 px-2 py-1 rounded"
+										>Beach</span
+									>
+									<h3 class="font-semibold mb-2 tour-name">
+										Raja Ampat diving
+									</h3>
+									<p class="text-gray-600 text-sm mb-2">
+										4 Days 3 Nights
+									</p>
+									<div
+										class="flex justify-between items-center"
+									>
+										<span
+											class="text-yellow-500 font-bold tour-price"
+											>Rp 10.000.000</span
+										>
+										<button
+											class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+										>
+											Book Now
+										</button>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div
+							class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
 							data-category="mountain"
 						>
-							<img
-								src="/api/placeholder/300/200"
-								alt="Swiss Alps"
-								class="w-full h-48 object-cover"
-							/>
-							<div class="p-4">
-								<span
-									class="text-xs font-semibold text-green-500 bg-green-100 px-2 py-1 rounded"
-									>Mountain</span
-								>
-								<h3 class="font-semibold my-2 tour-name">
-									Swiss Alps Adventure
-								</h3>
-								<p class="text-gray-600 text-sm mb-2">
-									7 Days 6 Nights
-								</p>
-								<div class="flex justify-between items-center">
-									<span
-										class="text-yellow-500 font-bold tour-price"
-										>$899.99</span
-									>
-									<button
-										class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
-									>
-										Book Now
-									</button>
-								</div>
-							</div>
-						</div>
+							<a href="detail.html">
+								<img
+									src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+									alt="Mount Rinjani"
+									class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+								/>
 
-						<!-- City Tour -->
+								<div class="p-4">
+									<span
+										class="absolute top-2 right-2 text-xs font-semibold text-green-500 bg-green-100 px-2 py-1 rounded"
+										>Mountain</span
+									>
+									<h3 class="font-semibold mb-2 tour-name">
+										Mount Rinjani
+									</h3>
+									<p class="text-gray-600 text-sm mb-2">
+										5 Days 4 Nights
+									</p>
+									<div
+										class="flex justify-between items-center"
+									>
+										<span
+											class="text-yellow-500 font-bold tour-price"
+											>Rp 3.000.000</span
+										>
+										<button
+											class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+										>
+											Book Now
+										</button>
+									</div>
+								</div>
+							</a>
+						</div>
 						<div
-							class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+							class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+							data-category="historical"
+						>
+							<a href="detail.html">
+								<img
+									src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=300&h=200&fit=crop"
+									alt="Old Jakarta Tour"
+									class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+								/>
+								<div class="p-4">
+									<span
+										class="absolute top-2 right-2 text-xs font-semibold text-orange-500 bg-orange-100 px-2 py-1 rounded"
+										>Historical</span
+									>
+									<h3 class="font-semibold mb-2 tour-name">
+										Old Town Jakarta Tour
+									</h3>
+									<p class="text-gray-600 text-sm mb-2">
+										7 Days 6 Nights
+									</p>
+									<div
+										class="flex justify-between items-center"
+									>
+										<span
+											class="text-yellow-500 font-bold tour-price"
+											>Rp 8.000.000</span
+										>
+										<button
+											class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+										>
+											Book Now
+										</button>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div
+							class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+							data-category="mountain"
+						>
+							<a href="detail.html">
+								<img
+									src="https://images.pexels.com/photos/1732281/pexels-photo-1732281.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+									alt="Sukabumi Rafting"
+									class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+								/>
+								<div class="p-4">
+									<span
+										class="absolute top-2 right-2 text-xs font-semibold text-green-500 bg-green-100 px-2 py-1 rounded"
+										>Mountain</span
+									>
+									<h3 class="font-semibold mb-2 tour-name">
+										Sukabumi Rafting
+									</h3>
+									<p class="text-gray-600 text-sm mb-2">
+										1 Days
+									</p>
+									<div
+										class="flex justify-between items-center"
+									>
+										<span
+											class="text-yellow-500 font-bold tour-price"
+											>Rp 1.500.000</span
+										>
+										<button
+											class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+										>
+											Book Now
+										</button>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div
+							class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+							data-category="beach"
+						>
+							<a href="detail.html">
+								<img
+									src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=300&h=200&fit=crop"
+									alt="Padang Beach"
+									class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+								/>
+								<div class="p-4">
+									<span
+										class="absolute top-2 right-2 text-xs font-semibold text-yellow-500 bg-yellow-100 px-2 py-1 rounded"
+										>Beach</span
+									>
+									<h3 class="font-semibold mb-2 tour-name">
+										Padang Beach
+									</h3>
+									<p class="text-gray-600 text-sm mb-2">
+										3 Days 2 nights
+									</p>
+									<div
+										class="flex justify-between items-center"
+									>
+										<span
+											class="text-yellow-500 font-bold tour-price"
+											>Rp 2.500.000</span
+										>
+										<button
+											class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+										>
+											Book Now
+										</button>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div
+							class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+							data-category="beach"
+						>
+							<a href="detail.html">
+								<img
+									src="https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+									alt="Komodo Island Tour"
+									class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+								/>
+								<div class="p-4">
+									<span
+										class="absolute top-2 right-2 text-xs font-semibold text-yellow-500 bg-yellow-100 px-2 py-1 rounded"
+										>Beach</span
+									>
+									<h3 class="font-semibold mb-2 tour-name">
+										Komodo Island Tour
+									</h3>
+									<p class="text-gray-600 text-sm mb-2">
+										3 Days 2 nights
+									</p>
+									<div
+										class="flex justify-between items-center"
+									>
+										<span
+											class="text-yellow-500 font-bold tour-price"
+											>Rp 20.500.000</span
+										>
+										<button
+											class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+										>
+											Book Now
+										</button>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div
+							class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
 							data-category="city"
 						>
-							<img
-								src="/api/placeholder/300/200"
-								alt="Paris"
-								class="w-full h-48 object-cover"
-							/>
-							<div class="p-4">
-								<span
-									class="text-xs font-semibold text-blue-500 bg-blue-100 px-2 py-1 rounded"
-									>City</span
-								>
-								<h3 class="font-semibold my-2 tour-name">
-									Paris City Explorer
-								</h3>
-								<p class="text-gray-600 text-sm mb-2">
-									4 Days 3 Nights
-								</p>
-								<div class="flex justify-between items-center">
+							<a href="detail.html">
+								<img
+									src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+									alt="IKN Tour"
+									class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+								/>
+								<div class="p-4">
 									<span
-										class="text-yellow-500 font-bold tour-price"
-										>$699.99</span
+										class="absolute top-2 right-2 text-xs font-semibold text-blue-500 bg-blue-100 px-2 py-1 rounded"
+										>City</span
 									>
-									<button
-										class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
+									<h3 class="font-semibold mb-2 tour-name">
+										IKN Tour
+									</h3>
+									<p class="text-gray-600 text-sm mb-2">
+										3 Days 2 nights
+									</p>
+									<div
+										class="flex justify-between items-center"
 									>
-										Book Now
-									</button>
+										<span
+											class="text-yellow-500 font-bold tour-price"
+											>Rp 100.500.000</span
+										>
+										<button
+											class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+										>
+											Book Now
+										</button>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
-
-						<!-- Desert Tour -->
-						<div
-							class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
-							data-category="desert"
-						>
-							<img
-								src="/api/placeholder/300/200"
-								alt="Sahara"
-								class="w-full h-48 object-cover"
-							/>
-							<div class="p-4">
-								<span
-									class="text-xs font-semibold text-orange-500 bg-orange-100 px-2 py-1 rounded"
-									>Desert</span
-								>
-								<h3 class="font-semibold my-2 tour-name">
-									Sahara Desert Safari
-								</h3>
-								<p class="text-gray-600 text-sm mb-2">
-									3 Days 2 Nights
-								</p>
-								<div class="flex justify-between items-center">
-									<span
-										class="text-yellow-500 font-bold tour-price"
-										>$399.99</span
-									>
-									<button
-										class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
-									>
-										Book Now
-									</button>
-								</div>
-							</div>
-						</div>
-
-						<!-- Add more tour cards here -->
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- Footer -->
-		<footer class="bg-gray-900 text-white mt-12">
-			<!-- Footer content same as original -->
-		</footer>
 
 		<!-- Booking Modal -->
 		<div
@@ -395,7 +561,7 @@
 							<input
 								type="text"
 								id="tourDestination"
-								class="mt-1 block w-full border rounded-md p-2"
+								class="mt-1 block w-full border rounded-md p-2 text-left"
 								readonly
 							/>
 						</div>
@@ -497,12 +663,17 @@
 			</div>
 		</div>
 
-		<!-- Footer -->
 		<footer class="bg-gray-900 text-white mt-12">
 			<div class="container mx-auto px-4 py-12">
 				<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 					<div>
-						<h3 class="text-xl font-bold mb-4">TravelX</h3>
+						<a
+							href="index.html"
+							class="text-gray-400 hover:text-white"
+						>
+							<h3 class="text-xl font-bold mb-4">Travelpal</h3>
+						</a>
+
 						<p class="text-gray-400">Your trusted travel partner</p>
 					</div>
 					<div>
@@ -510,23 +681,23 @@
 						<ul class="space-y-2">
 							<li>
 								<a
-									href="#"
+									href="aboutus.html"
 									class="text-gray-400 hover:text-white"
 									>About Us</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="tours.html"
 									class="text-gray-400 hover:text-white"
-									>Contact</a
+									>Tours</a
 								>
 							</li>
 							<li>
 								<a
-									href="#"
+									href="contactus.html"
 									class="text-gray-400 hover:text-white"
-									>Terms & Conditions</a
+									>Contact</a
 								>
 							</li>
 						</ul>
@@ -534,12 +705,14 @@
 					<div>
 						<h4 class="font-semibold mb-4">Contact Us</h4>
 						<ul class="space-y-2">
-							<li class="text-gray-400">1234 Travel Lane</li>
 							<li class="text-gray-400">
-								Adventure City, AC 12345
+								Golden Park 3 blok H no 52
 							</li>
-							<li class="text-gray-400">1-888-TRAVEL-X</li>
-							<li class="text-gray-400">info@travelx.com</li>
+							<li class="text-gray-400">
+								Padang, Sumatera Barat
+							</li>
+							<li class="text-gray-400">+6281977516727</li>
+							<li class="text-gray-400">cs@travelpal.com</li>
 						</ul>
 					</div>
 					<div>
@@ -561,6 +734,8 @@
 		</footer>
 
 		<script>
+			const toastHTML = `<div id="toast-container" class="fixed top-4 right-4 z-50 flex flex-col gap-4"></div>`;
+			document.body.insertAdjacentHTML("beforeend", toastHTML);
 			$(document).ready(function () {
 				// Filter functionality
 				$('input[type="checkbox"], input[type="radio"]').on(
@@ -613,19 +788,27 @@
 				$(".book-now-btn").on("click", function (e) {
 					e.preventDefault();
 					const tourCard = $(this).closest(".tour-card");
-					const tourName = tourCard.find(".tour-name").text();
-					const tourPrice = tourCard.find(".tour-price").text();
+					const tourName = tourCard.find(".tour-name").text().trim();
+					const tourPrice = tourCard
+						.find(".tour-price")
+						.text()
+						.trim();
 
-					openBookingModal(tourName, tourPrice);
+					$("#tourDestination").val(tourName);
+					$("#tourPrice").val(tourPrice);
+					$("#ticketQuantity").val(1);
+					updateTotalAmount();
+
+					$("#ticketModal").removeClass("hidden").fadeIn(300);
 				});
 
 				$("#closeModal").on("click", function () {
-					$("#ticketModal").fadeOut();
+					$("#ticketModal").fadeOut(300);
 				});
 
 				$(window).on("click", function (e) {
 					if ($(e.target).is("#ticketModal")) {
-						$("#ticketModal").fadeOut();
+						$("#ticketModal").fadeOut(300);
 					}
 				});
 
@@ -636,51 +819,130 @@
 				$("#ticketForm").on("submit", function (e) {
 					e.preventDefault();
 
-					// Basic validation
-					const email = $("#contactEmail").val();
-					const date = $("#tourDate").val();
+					const formData = {
+						tour: $("#tourDestination").val(),
+						date: $("#tourDate").val(),
+						quantity: $("#ticketQuantity").val(),
+						name: $("#fullName").val(),
+						email: $("#contactEmail").val(),
+						requests: $("#specialRequests").val(),
+						total: $("#totalAmount").text(),
+					};
 
-					if (!email || !date) {
-						alert("Please fill in all required fields");
+					// Validate form
+					if (!formData.date || !formData.name || !formData.email) {
+						showToast(
+							"Please fill in all required fields",
+							"error"
+						);
 						return;
 					}
 
-					const bookingData = {
-						tour: $("#tourDestination").val(),
-						price: $("#tourPrice").val(),
-						quantity: $("#ticketQuantity").val(),
-						date: date,
-						email: email,
-						totalAmount: $("#totalAmount").text(),
-					};
+					// Show success message
+					showToast("Booking Confirmed!", "success");
 
-					alert(
-						"Booking successful!\n\nBooking Details:\n" +
-							`Tour: ${bookingData.tour}\n` +
-							`Date: ${bookingData.date}\n` +
-							`Quantity: ${bookingData.quantity}\n` +
-							`Total: ${bookingData.totalAmount}`
-					);
+					// Show booking details in a second toast
+					setTimeout(() => {
+						showToast(
+							`
+                <div class="font-semibold mb-1">Booking Details:</div>
+                <div class="text-sm">
+                    <div>Tour: ${formData.tour}</div>
+                    <div>Date: ${formData.date}</div>
+                    <div>Travelers: ${formData.quantity}</div>
+                    <div>Total: ${formData.total}</div>
+                </div>
+                <div class="text-xs mt-1">Confirmation sent to ${formData.email}</div>
+            `,
+							"info",
+							8000
+						);
+					}, 500);
 
-					$("#ticketModal").fadeOut();
+					// Reset form and close modal
 					$("#ticketForm")[0].reset();
+					$("#ticketModal").fadeOut(300);
 				});
-
-				function openBookingModal(tourName, tourPrice) {
-					$("#tourDestination").val(tourName);
-					$("#tourPrice").val(tourPrice);
-					$("#ticketQuantity").val(1);
-					updateTotalAmount();
-					$("#ticketModal").fadeIn();
-				}
 
 				function updateTotalAmount() {
 					const price = parseFloat(
-						$("#tourPrice").val().replace("$", "")
+						$("#tourPrice")
+							.val()
+							.replace("Rp", "")
+							.replace(/\./g, "")
 					);
-					const quantity = parseInt($("#ticketQuantity").val());
+					const quantity = parseInt($("#ticketQuantity").val()) || 1;
 					const total = price * quantity;
-					$("#totalAmount").text(`$${total.toFixed(2)}`);
+					const formattedTotal = new Intl.NumberFormat("id-ID", {
+						style: "currency",
+						currency: "IDR",
+						minimumFractionDigits: 0,
+						maximumFractionDigits: 0,
+					}).format(total);
+					$("#totalAmount").text(`${formattedTotal}`);
+				}
+
+				function showToast(message, type = "info", duration = 4000) {
+					const types = {
+						success: "bg-green-500",
+						error: "bg-red-500",
+						info: "bg-blue-500",
+						warning: "bg-yellow-500",
+					};
+
+					const icons = {
+						success: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                     </svg>`,
+						error: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>`,
+						info: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>`,
+						warning: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                     </svg>`,
+					};
+
+					const toast = $(`
+            <div class="transform transition-all duration-300 translate-x-full">
+                <div class="flex items-center p-4 rounded-lg shadow-lg ${types[type]} text-white min-w-[300px] max-w-[500px]">
+                    <div class="mr-3">
+                        ${icons[type]}
+                    </div>
+                    <div class="flex-1">
+                        ${message}
+                    </div>
+                    <button class="ml-4 hover:opacity-75 transition-opacity duration-300 close-toast">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        `);
+
+					$("#toast-container").append(toast);
+
+					setTimeout(() => {
+						toast.removeClass("translate-x-full");
+					}, 100);
+
+					setTimeout(() => {
+						removeToast(toast);
+					}, duration);
+
+					toast.find(".close-toast").on("click", function () {
+						removeToast(toast);
+					});
+				}
+
+				function removeToast(toast) {
+					toast.addClass("translate-x-full");
+					setTimeout(() => {
+						toast.remove();
+					}, 300);
 				}
 			});
 		</script>
