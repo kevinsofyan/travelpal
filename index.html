@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Travel Booking Website</title>
+		<title>Travelpal</title>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.0/swiper-bundle.min.js"></script>
@@ -13,33 +13,46 @@
 		/>
 	</head>
 	<body class="bg-gray-50">
-		<!-- Navigation -->
-		<nav class="bg-white shadow-sm">
+		<nav
+			class="bg-white shadow-sm fixed w-full z-50 transition-all duration-300"
+		>
 			<div class="container mx-auto px-4 py-3">
 				<div class="flex justify-between items-center">
-					<div class="text-2xl font-bold text-yellow-500">
-						TravelX
+					<div
+						class="text-2xl font-bold text-yellow-500 hover:scale-105 transition-transform duration-300"
+					>
+						Travelpal
 					</div>
 					<div class="hidden md:flex space-x-6">
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="#"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Home</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="#"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Tours</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="#"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Hotels</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="#"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Cars</a
 						>
-						<a href="#" class="text-gray-600 hover:text-gray-900"
+						<a
+							href="#"
+							class="text-gray-600 hover:text-yellow-500 hover:-translate-y-1 transition-all duration-300"
 							>Contact</a
 						>
 					</div>
 					<div class="flex items-center space-x-4">
 						<button
-							class="bg-yellow-500 text-white px-4 py-2 rounded-lg"
+							class="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 hover:scale-105 transition-all duration-300"
 						>
 							Sign In
 						</button>
@@ -48,102 +61,244 @@
 			</div>
 		</nav>
 
-		<!-- Hero Section -->
-		<div class="relative h-[500px] bg-blue-100">
+		<div class="relative h-[100vh] bg-blue-100 overflow-hidden">
 			<img
-				src="/api/placeholder/1200/500"
+				src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2000&fit=crop"
 				alt="Hero"
-				class="w-full h-full object-cover"
+				class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 scale-110"
 			/>
-			<div class="absolute inset-0 bg-black bg-opacity-40"></div>
-			<div class="absolute inset-0 flex items-center justify-center">
-				<div class="text-center text-white">
-					<h1 class="text-4xl md:text-6xl font-bold mb-4">
-						Unleash Your Wanderlust
+			<div
+				class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/20 to-black/20"
+			></div>
+			<div
+				class="absolute inset-0 flex flex-col items-center justify-center px-4"
+			>
+				<div
+					class="text-center text-white max-w-5xl mx-auto space-y-6 transform -translate-y-10"
+				>
+					<h1
+						class="text-5xl md:text-7xl font-bold mb-6 leading-tight hover:scale-105 transition-transform duration-300"
+					>
+						Explore the Wonders of
+						<span class="text-yellow-400">Indonesia</span>
 					</h1>
-					<p class="text-xl mb-8">Book Your Next Journey</p>
-					<div class="bg-white rounded-lg p-4 max-w-4xl mx-auto">
+					<p
+						class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto"
+					>
+						Discover breathtaking destinations and create
+						unforgettable memories
+					</p>
+
+					<!-- Stats Bar -->
+					<div
+						class="flex justify-center space-x-8 mb-10 text-gray-200"
+					>
+						<div class="text-center">
+							<div class="text-3xl font-bold text-yellow-400">
+								500+
+							</div>
+							<div class="text-sm">Destinations</div>
+						</div>
+						<div class="text-center">
+							<div class="text-3xl font-bold text-yellow-400">
+								10k+
+							</div>
+							<div class="text-sm">Happy Travelers</div>
+						</div>
+						<div class="text-center">
+							<div class="text-3xl font-bold text-yellow-400">
+								98%
+							</div>
+							<div class="text-sm">Satisfaction Rate</div>
+						</div>
+					</div>
+					<div
+						class="bg-white/95 backdrop-blur-lg rounded-2xl p-6 max-w-4xl mx-auto shadow-2xl transform hover:scale-102 transition-all duration-300"
+					>
 						<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-							<input
-								type="text"
-								placeholder="Where to?"
-								class="p-2 border rounded"
-							/>
-							<input type="date" class="p-2 border rounded" />
-							<input
-								type="number"
-								placeholder="Guests"
-								class="p-2 border rounded"
-							/>
+							<div class="relative">
+								<div
+									class="absolute inset-y-0 left-3 flex items-center text-gray-400"
+								>
+									<svg
+										class="w-5 h-5"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+										/>
+									</svg>
+								</div>
+								<input
+									type="text"
+									placeholder="Where to?"
+									class="w-full pl-10 p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+								/>
+							</div>
+
+							<!-- Date Input -->
+							<div class="relative">
+								<div
+									class="absolute inset-y-0 left-3 flex items-center text-gray-400"
+								>
+									<svg
+										class="w-5 h-5"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+										/>
+									</svg>
+								</div>
+								<input
+									type="date"
+									class="w-full pl-10 p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+								/>
+							</div>
+							<div class="relative">
+								<div
+									class="absolute inset-y-0 left-3 flex items-center text-gray-400"
+								>
+									<svg
+										class="w-5 h-5"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+										/>
+									</svg>
+								</div>
+								<input
+									type="number"
+									placeholder="Guests"
+									min="1"
+									class="w-full pl-10 p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent transition-all duration-300"
+								/>
+							</div>
+
+							<!-- Search Button -->
 							<button
-								class="bg-yellow-500 text-white p-2 rounded"
+								class="bg-yellow-500 text-white p-3 rounded-xl hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
 							>
-								Search
+								<svg
+									class="w-5 h-5"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+									/>
+								</svg>
+								<span>Search</span>
 							</button>
 						</div>
 					</div>
 				</div>
+				<div
+					class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+				>
+					<svg
+						class="w-6 h-6 text-white"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M19 14l-7 7m0 0l-7-7m7 7V3"
+						/>
+					</svg>
+				</div>
 			</div>
 		</div>
-
-		<!-- Featured Tours -->
 		<div class="container mx-auto px-4 py-12">
 			<div class="flex justify-between items-center mb-6">
-				<h2 class="text-2xl font-bold">Our Featured Tours</h2>
-				<button class="text-yellow-500">View All</button>
+				<h2
+					class="text-2xl font-bold hover:text-yellow-500 transition-colors duration-300"
+				>
+					Our Featured Tours
+				</h2>
+				<button
+					class="text-yellow-500 hover:scale-110 transition-transform duration-300"
+				>
+					View All
+				</button>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-				<!-- Tour Card 1 -->
 				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
 				>
-					<img
-						src="/api/placeholder/300/200"
-						alt="Tour"
-						class="w-full h-48 object-cover"
-					/>
+					<div class="relative overflow-hidden">
+						<img
+							src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=300&h=200&fit=crop"
+							alt="Bali Beach Tour"
+							class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+						/>
+					</div>
 					<div class="p-4">
-						<h3 class="font-semibold mb-2 tour-name">
-							California Desert Tour
+						<h3
+							class="font-semibold mb-2 group-hover:text-yellow-500 transition-colors duration-300 tour-name"
+						>
+							Bali beach tour
 						</h3>
 						<p class="text-gray-600 text-sm mb-2">
 							3 Days 2 Nights
 						</p>
 						<div class="flex justify-between items-center">
 							<span class="text-yellow-500 font-bold tour-price"
-								>$99.99</span
+								>Rp 4.000.000</span
 							>
 							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
 							>
 								Book Now
 							</button>
 						</div>
 					</div>
 				</div>
-
-				<!-- Tour Card 2 -->
 				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
 				>
 					<img
-						src="/api/placeholder/300/200"
-						alt="Tour"
-						class="w-full h-48 object-cover"
+						src="https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?w=300&h=200&fit=crop"
+						alt="Raja Ampat Diving"
+						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
 					/>
+
 					<div class="p-4">
 						<h3 class="font-semibold mb-2 tour-name">
-							Grand Canyon Adventure
+							Raja Ampat diving
 						</h3>
 						<p class="text-gray-600 text-sm mb-2">
 							4 Days 3 Nights
 						</p>
 						<div class="flex justify-between items-center">
 							<span class="text-yellow-500 font-bold tour-price"
-								>$149.99</span
+								>Rp 10.000.000</span
 							>
 							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
 							>
 								Book Now
 							</button>
@@ -151,57 +306,159 @@
 					</div>
 				</div>
 
-				<!-- Tour Card 3 -->
 				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
 				>
 					<img
-						src="/api/placeholder/300/200"
-						alt="Tour"
-						class="w-full h-48 object-cover"
+						src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+						alt="Mount Rinjani"
+						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
 					/>
+
 					<div class="p-4">
 						<h3 class="font-semibold mb-2 tour-name">
-							Yellowstone Explorer
+							Mount Rinjani
 						</h3>
 						<p class="text-gray-600 text-sm mb-2">
 							5 Days 4 Nights
 						</p>
 						<div class="flex justify-between items-center">
 							<span class="text-yellow-500 font-bold tour-price"
-								>$199.99</span
+								>Rp 3.000.000</span
 							>
 							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
 							>
 								Book Now
 							</button>
 						</div>
 					</div>
 				</div>
-
-				<!-- Tour Card 4 -->
 				<div
-					class="bg-white rounded-lg shadow-md overflow-hidden tour-card"
+					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
 				>
 					<img
-						src="/api/placeholder/300/200"
-						alt="Tour"
-						class="w-full h-48 object-cover"
+						src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=300&h=200&fit=crop"
+						alt="Old Jakarta Tour"
+						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
 					/>
 					<div class="p-4">
 						<h3 class="font-semibold mb-2 tour-name">
-							Hawaii Beach Vacation
+							Old Town Jakarta Tour
 						</h3>
 						<p class="text-gray-600 text-sm mb-2">
 							7 Days 6 Nights
 						</p>
 						<div class="flex justify-between items-center">
 							<span class="text-yellow-500 font-bold tour-price"
-								>$299.99</span
+								>Rp 8.000.000</span
 							>
 							<button
-								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded book-now-btn"
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+							>
+								Book Now
+							</button>
+						</div>
+					</div>
+				</div>
+				<div
+					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+				>
+					<img
+						src="https://images.pexels.com/photos/1732281/pexels-photo-1732281.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+						alt="Sukabumi Rafting"
+						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+					/>
+					<div class="p-4">
+						<h3 class="font-semibold mb-2 tour-name">
+							Sukabumi Rafting
+						</h3>
+						<p class="text-gray-600 text-sm mb-2">1 Days</p>
+						<div class="flex justify-between items-center">
+							<span class="text-yellow-500 font-bold tour-price"
+								>Rp 1.500.000</span
+							>
+							<button
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+							>
+								Book Now
+							</button>
+						</div>
+					</div>
+				</div>
+				<div
+					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+				>
+					<img
+						src="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=300&h=200&fit=crop"
+						alt="Padang Beach"
+						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+					/>
+					<div class="p-4">
+						<h3 class="font-semibold mb-2 tour-name">
+							Padang Beach
+						</h3>
+						<p class="text-gray-600 text-sm mb-2">
+							3 Days 2 nights
+						</p>
+						<div class="flex justify-between items-center">
+							<span class="text-yellow-500 font-bold tour-price"
+								>Rp 2.500.000</span
+							>
+							<button
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+							>
+								Book Now
+							</button>
+						</div>
+					</div>
+				</div>
+				<div
+					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+				>
+					<img
+						src="https://images.pexels.com/photos/4825701/pexels-photo-4825701.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+						alt="Komodo Island Tour"
+						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+					/>
+					<div class="p-4">
+						<h3 class="font-semibold mb-2 tour-name">
+							Komodo Island Tour
+						</h3>
+						<p class="text-gray-600 text-sm mb-2">
+							3 Days 2 nights
+						</p>
+						<div class="flex justify-between items-center">
+							<span class="text-yellow-500 font-bold tour-price"
+								>Rp 20.500.000</span
+							>
+							<button
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
+							>
+								Book Now
+							</button>
+						</div>
+					</div>
+				</div>
+				<div
+					class="bg-white rounded-lg shadow-md overflow-hidden group hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 tour-card"
+				>
+					<img
+						src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=1"
+						alt="IKN Tour"
+						class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+					/>
+					<div class="p-4">
+						<h3 class="font-semibold mb-2 tour-name">IKN Tour</h3>
+						<p class="text-gray-600 text-sm mb-2">
+							3 Days 2 nights
+						</p>
+						<div class="flex justify-between items-center">
+							<span class="text-yellow-500 font-bold tour-price"
+								>Rp 100.500.000</span
+							>
+							<button
+								class="text-sm bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600 transform hover:scale-105 transition-all duration-300 book-now-btn"
 							>
 								Book Now
 							</button>
@@ -215,59 +472,74 @@
 		<div class="container mx-auto px-4 py-12">
 			<h2 class="text-2xl font-bold mb-6">Top Categories of Tours</h2>
 			<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-				<div class="relative rounded-lg overflow-hidden h-32">
+				<div
+					class="relative rounded-lg overflow-hidden h-32 group cursor-pointer"
+				>
 					<img
-						src="/api/placeholder/300/200"
+						src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
 						alt="Beach"
-						class="w-full h-full object-cover"
+						class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
 					/>
 					<div
-						class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"
+						class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center"
 					>
-						<span class="text-white font-semibold text-lg"
+						<span
+							class="text-white font-semibold text-lg transform group-hover:scale-110 transition-transform duration-300"
 							>Beach</span
 						>
 					</div>
 				</div>
-				<div class="relative rounded-lg overflow-hidden h-32">
+
+				<div
+					class="relative rounded-lg overflow-hidden h-32 group cursor-pointer"
+				>
 					<img
-						src="/api/placeholder/300/200"
-						alt="Mountain"
-						class="w-full h-full object-cover"
+						src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+						alt="Cities"
+						class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
 					/>
 					<div
-						class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"
+						class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center"
 					>
-						<span class="text-white font-semibold text-lg"
+						<span
+							class="text-white font-semibold text-lg transform group-hover:scale-110 transition-transform duration-300"
+							>Cities</span
+						>
+					</div>
+				</div>
+
+				<div
+					class="relative rounded-lg overflow-hidden h-32 group cursor-pointer"
+				>
+					<img
+						src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0"
+						alt="Mountain"
+						class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+					/>
+					<div
+						class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center"
+					>
+						<span
+							class="text-white font-semibold text-lg transform group-hover:scale-110 transition-transform duration-300"
 							>Mountain</span
 						>
 					</div>
 				</div>
-				<div class="relative rounded-lg overflow-hidden h-32">
+
+				<div
+					class="relative rounded-lg overflow-hidden h-32 group cursor-pointer"
+				>
 					<img
-						src="/api/placeholder/300/200"
-						alt="City"
-						class="w-full h-full object-cover"
+						src="https://images.unsplash.com/photo-1473445361085-b9a07f55608b"
+						alt="Historical"
+						class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
 					/>
 					<div
-						class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"
+						class="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center"
 					>
-						<span class="text-white font-semibold text-lg"
-							>City</span
-						>
-					</div>
-				</div>
-				<div class="relative rounded-lg overflow-hidden h-32">
-					<img
-						src="/api/placeholder/300/200"
-						alt="Desert"
-						class="w-full h-full object-cover"
-					/>
-					<div
-						class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"
-					>
-						<span class="text-white font-semibold text-lg"
-							>Desert</span
+						<span
+							class="text-white font-semibold text-lg transform group-hover:scale-110 transition-transform duration-300"
+							>Historical</span
 						>
 					</div>
 				</div>
@@ -311,7 +583,7 @@
 							<input
 								type="text"
 								id="tourDestination"
-								class="mt-1 block w-full border rounded-md p-2"
+								class="mt-1 block w-full border rounded-md p-2 text-left"
 								readonly
 							/>
 						</div>
@@ -412,7 +684,235 @@
 				</form>
 			</div>
 		</div>
+		<div class="bg-blue-50 py-16">
+			<div class="container mx-auto px-4">
+				<h2 class="text-3xl font-bold text-center mb-12">
+					What Our Travelers Say
+				</h2>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<!-- Testimonial 1 -->
+					<div
+						class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300"
+					>
+						<div class="flex items-center mb-4">
+							<img
+								src="/api/placeholder/64/64"
+								alt="User"
+								class="w-16 h-16 rounded-full"
+							/>
+							<div class="ml-4">
+								<h4 class="font-semibold">Sarah Johnson</h4>
+								<p class="text-yellow-500">★★★★★</p>
+							</div>
+						</div>
+						<p class="text-gray-600">
+							"The Grand Canyon Adventure was breathtaking! The
+							guides were knowledgeable and the entire experience
+							exceeded my expectations. Will definitely book
+							again!"
+						</p>
+					</div>
 
+					<!-- Testimonial 2 -->
+					<div
+						class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300"
+					>
+						<div class="flex items-center mb-4">
+							<img
+								src="/api/placeholder/64/64"
+								alt="User"
+								class="w-16 h-16 rounded-full"
+							/>
+							<div class="ml-4">
+								<h4 class="font-semibold">Michael Chen</h4>
+								<p class="text-yellow-500">★★★★★</p>
+							</div>
+						</div>
+						<p class="text-gray-600">
+							"Hawaii Beach Vacation was pure paradise! Everything
+							was perfectly organized, from the hotel to the
+							activities. It was the dream vacation I've always
+							wanted."
+						</p>
+					</div>
+
+					<!-- Testimonial 3 -->
+					<div
+						class="bg-white p-6 rounded-xl shadow-lg transform hover:-translate-y-1 transition-transform duration-300"
+					>
+						<div class="flex items-center mb-4">
+							<img
+								src="/api/placeholder/64/64"
+								alt="User"
+								class="w-16 h-16 rounded-full"
+							/>
+							<div class="ml-4">
+								<h4 class="font-semibold">Emma Davis</h4>
+								<p class="text-yellow-500">★★★★★</p>
+							</div>
+						</div>
+						<p class="text-gray-600">
+							"The California Desert Tour was an incredible
+							adventure! The sunset views were spectacular, and
+							the camping experience was unforgettable."
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Why Choose Us Section -->
+		<div class="container mx-auto px-4 py-16">
+			<h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+			<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+				<!-- Feature 1 -->
+				<div
+					class="group text-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
+				>
+					<div
+						class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300"
+					>
+						<svg
+							class="w-8 h-8 text-yellow-500"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+							/>
+						</svg>
+					</div>
+					<h3
+						class="text-xl font-semibold mb-2 group-hover:text-yellow-500 transition-colors duration-300"
+					>
+						Secure Booking
+					</h3>
+					<p class="text-gray-600">
+						Your payments and personal information are always
+						protected
+					</p>
+				</div>
+
+				<!-- Feature 2 -->
+				<div
+					class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+				>
+					<div
+						class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4"
+					>
+						<svg
+							class="w-8 h-8 text-yellow-500"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-semibold mb-2">24/7 Support</h3>
+					<p class="text-gray-600">
+						Our team is always here to help you with any questions
+					</p>
+				</div>
+
+				<!-- Feature 3 -->
+				<div
+					class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+				>
+					<div
+						class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4"
+					>
+						<svg
+							class="w-8 h-8 text-yellow-500"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-semibold mb-2">
+						Best Price Guarantee
+					</h3>
+					<p class="text-gray-600">
+						We offer competitive prices for all our tours and
+						packages
+					</p>
+				</div>
+
+				<!-- Feature 4 -->
+				<div
+					class="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+				>
+					<div
+						class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4"
+					>
+						<svg
+							class="w-8 h-8 text-yellow-500"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+							/>
+						</svg>
+					</div>
+					<h3 class="text-xl font-semibold mb-2">
+						Exceptional Experiences
+					</h3>
+					<p class="text-gray-600">
+						Carefully curated tours to create unforgettable memories
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Newsletter Section -->
+		<div class="bg-yellow-500 py-16">
+			<div class="container mx-auto px-4">
+				<div class="max-w-2xl mx-auto text-center">
+					<h2 class="text-3xl font-bold text-white mb-4">
+						Get Travel Updates
+					</h2>
+					<p class="text-white mb-8">
+						Subscribe to our newsletter and receive exclusive offers
+						every week
+					</p>
+					<form
+						class="flex flex-col md:flex-row gap-4 justify-center"
+					>
+						<input
+							type="email"
+							placeholder="Enter your email"
+							class="px-6 py-3 rounded-lg flex-1 max-w-md"
+						/>
+						<button
+							class="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300"
+						>
+							Subscribe
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
 		<!-- Footer -->
 		<footer class="bg-gray-900 text-white mt-12">
 			<div class="container mx-auto px-4 py-12">
@@ -477,6 +977,9 @@
 		</footer>
 
 		<script>
+			const toastHTML = `<div id="toast-container" class="fixed top-4 right-4 z-50 flex flex-col gap-4"></div>`;
+			document.body.insertAdjacentHTML("beforeend", toastHTML);
+
 			$(document).ready(function () {
 				new Swiper(".featured-tours", {
 					slidesPerView: 1,
@@ -497,6 +1000,7 @@
 						},
 					},
 				});
+
 				$('a[href^="#"]').on("click", function (e) {
 					e.preventDefault();
 					$("html, body").animate(
@@ -511,22 +1015,30 @@
 					$(".mobile-menu").toggleClass("hidden");
 				});
 			});
+
+			// Modal Functions
+
 			$(".book-now-btn").on("click", function (e) {
 				e.preventDefault();
 				const tourCard = $(this).closest(".tour-card");
-				const tourName = tourCard.find(".tour-name").text();
-				const tourPrice = tourCard.find(".tour-price").text();
+				const tourName = tourCard.find(".tour-name").text().trim();
+				const tourPrice = tourCard.find(".tour-price").text().trim();
 
-				openBookingModal(tourName, tourPrice);
+				$("#tourDestination").val(tourName);
+				$("#tourPrice").val(tourPrice);
+				$("#ticketQuantity").val(1);
+				updateTotalAmount();
+
+				$("#ticketModal").removeClass("hidden").fadeIn(300);
 			});
 
 			$("#closeModal").on("click", function () {
-				$("#ticketModal").fadeOut();
+				$("#ticketModal").fadeOut(300);
 			});
 
 			$(window).on("click", function (e) {
 				if ($(e.target).is("#ticketModal")) {
-					$("#ticketModal").fadeOut();
+					$("#ticketModal").fadeOut(300);
 				}
 			});
 
@@ -537,51 +1049,124 @@
 			$("#ticketForm").on("submit", function (e) {
 				e.preventDefault();
 
-				// Basic validation
-				const email = $("#contactEmail").val();
-				const date = $("#tourDate").val();
+				const formData = {
+					tour: $("#tourDestination").val(),
+					date: $("#tourDate").val(),
+					quantity: $("#ticketQuantity").val(),
+					name: $("#fullName").val(),
+					email: $("#contactEmail").val(),
+					requests: $("#specialRequests").val(),
+					total: $("#totalAmount").text(),
+				};
 
-				if (!email || !date) {
-					alert("Please fill in all required fields");
+				// Validate form
+				if (!formData.date || !formData.name || !formData.email) {
+					showToast("Please fill in all required fields", "error");
 					return;
 				}
 
-				const bookingData = {
-					tour: $("#tourDestination").val(),
-					price: $("#tourPrice").val(),
-					quantity: $("#ticketQuantity").val(),
-					date: date,
-					email: email,
-					totalAmount: $("#totalAmount").text(),
-				};
+				// Show success message
+				showToast("Booking Confirmed!", "success");
 
-				alert(
-					"Booking successful!\n\nBooking Details:\n" +
-						`Tour: ${bookingData.tour}\n` +
-						`Date: ${bookingData.date}\n` +
-						`Quantity: ${bookingData.quantity}\n` +
-						`Total: ${bookingData.totalAmount}`
-				);
+				// Show booking details in a second toast
+				setTimeout(() => {
+					showToast(
+						`
+                <div class="font-semibold mb-1">Booking Details:</div>
+                <div class="text-sm">
+                    <div>Tour: ${formData.tour}</div>
+                    <div>Date: ${formData.date}</div>
+                    <div>Travelers: ${formData.quantity}</div>
+                    <div>Total: ${formData.total}</div>
+                </div>
+                <div class="text-xs mt-1">Confirmation sent to ${formData.email}</div>
+            `,
+						"info",
+						8000
+					);
+				}, 500);
 
-				$("#ticketModal").fadeOut();
+				// Reset form and close modal
 				$("#ticketForm")[0].reset();
+				$("#ticketModal").fadeOut(300);
 			});
-
-			function openBookingModal(tourName, tourPrice) {
-				$("#tourDestination").val(tourName);
-				$("#tourPrice").val(tourPrice);
-				$("#ticketQuantity").val(1);
-				updateTotalAmount();
-				$("#ticketModal").fadeIn();
-			}
 
 			function updateTotalAmount() {
 				const price = parseFloat(
-					$("#tourPrice").val().replace("$", "")
+					$("#tourPrice").val().replace("Rp", "").replace(/\./g, "")
 				);
-				const quantity = parseInt($("#ticketQuantity").val());
+				const quantity = parseInt($("#ticketQuantity").val()) || 1;
 				const total = price * quantity;
-				$("#totalAmount").text(`$${total.toFixed(2)}`);
+				const formattedTotal = new Intl.NumberFormat("id-ID", {
+					style: "currency",
+					currency: "IDR",
+					minimumFractionDigits: 0,
+					maximumFractionDigits: 0,
+				}).format(total);
+				$("#totalAmount").text(`${formattedTotal}`);
+			}
+
+			function showToast(message, type = "info", duration = 4000) {
+				const types = {
+					success: "bg-green-500",
+					error: "bg-red-500",
+					info: "bg-blue-500",
+					warning: "bg-yellow-500",
+				};
+
+				const icons = {
+					success: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                     </svg>`,
+					error: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>`,
+					info: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>`,
+					warning: `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                     </svg>`,
+				};
+
+				const toast = $(`
+            <div class="transform transition-all duration-300 translate-x-full">
+                <div class="flex items-center p-4 rounded-lg shadow-lg ${types[type]} text-white min-w-[300px] max-w-[500px]">
+                    <div class="mr-3">
+                        ${icons[type]}
+                    </div>
+                    <div class="flex-1">
+                        ${message}
+                    </div>
+                    <button class="ml-4 hover:opacity-75 transition-opacity duration-300 close-toast">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        `);
+
+				$("#toast-container").append(toast);
+
+				setTimeout(() => {
+					toast.removeClass("translate-x-full");
+				}, 100);
+
+				setTimeout(() => {
+					removeToast(toast);
+				}, duration);
+
+				toast.find(".close-toast").on("click", function () {
+					removeToast(toast);
+				});
+			}
+
+			function removeToast(toast) {
+				toast.addClass("translate-x-full");
+				setTimeout(() => {
+					toast.remove();
+				}, 300);
 			}
 		</script>
 	</body>
