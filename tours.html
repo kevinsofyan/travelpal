@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Tours - TravelX</title>
+		<title>Tours - Travelpal</title>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	</head>
@@ -838,10 +838,8 @@
 						return;
 					}
 
-					// Show success message
 					showToast("Booking Confirmed!", "success");
 
-					// Show booking details in a second toast
 					setTimeout(() => {
 						showToast(
 							`
@@ -859,7 +857,6 @@
 						);
 					}, 500);
 
-					// Reset form and close modal
 					$("#ticketForm")[0].reset();
 					$("#ticketModal").fadeOut(300);
 				});
